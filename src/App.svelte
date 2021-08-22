@@ -5,10 +5,14 @@
   import Nav from "./lib/Nav.svelte";
   import Annotation from "svelte-rough-notation";
   import { onMount } from "svelte";
+  import AOS from "aos";
+  import "aos/dist/aos.css"; // You can also use <link> for styles
 
   let visible = false;
 
   onMount(() => {
+    AOS.init();
+
     setTimeout(() => {
       visible = true;
     }, 500);
@@ -27,7 +31,7 @@
         class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
       >
         <div
-          class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
+          class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-4 items-center text-center order-last md:order-first"
         >
           <h1
             class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-200"
@@ -62,11 +66,14 @@
             </button>
           </div>
         </div>
-        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-16">
           <img
             class="object-cover object-center rounded"
             alt="hero"
             src={logo}
+            data-aos="fade-down"
+            data-aos-delay="250"
+            data-aos-duration="1000"
           />
         </div>
       </div>
@@ -85,7 +92,7 @@
             Raw Denim Heirloom Man Braid
           </h1>
           <p
-            class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s"
+            class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500"
           >
             Blue bottle crucifix vinyl post-ironic four dollar toast vegan
             taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi
