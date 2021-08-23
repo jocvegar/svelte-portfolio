@@ -3,6 +3,7 @@
   import logo from "./assets/svelte.png";
   import Counter from "./lib/Counter.svelte";
   import Nav from "./lib/Nav.svelte";
+  import Contact from "./lib/Contact.svelte";
   import Annotation from "svelte-rough-notation";
   import { onMount } from "svelte";
   import AOS from "aos";
@@ -36,13 +37,7 @@
           <h1
             class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-200"
           >
-            <Annotation
-              bind:visible
-              type="highlight"
-              padding={150}
-              color="#FF3E00"
-              multiline
-            >
+            <Annotation bind:visible type="highlight" color="#FF3E00" multiline>
               Jose Vega
               <br class="hidden lg:inline-block" />A some what developer
             </Annotation>
@@ -83,7 +78,7 @@
       <Counter />
     </div>
 
-    <section class="text-gray-600 body-font bg-gray-100">
+    <section id="div1" class="text-gray-600 body-font bg-gray-100">
       <div class="container px-5 py-24 mx-auto">
         <div class="text-center mb-20">
           <h1
@@ -108,6 +103,9 @@
           <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
             <div
               class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-light-anaranjado text-anaranjado mb-5 flex-shrink-0"
+              data-aos="fade-down"
+              data-aos-delay="250"
+              data-aos-duration="1000"
             >
               <svg
                 fill="none"
@@ -151,6 +149,9 @@
           <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
             <div
               class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-light-anaranjado text-anaranjado mb-5 flex-shrink-0"
+              data-aos="fade-down"
+              data-aos-delay="250"
+              data-aos-duration="1000"
             >
               <svg
                 fill="none"
@@ -196,6 +197,9 @@
           <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
             <div
               class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-light-anaranjado text-anaranjado mb-5 flex-shrink-0"
+              data-aos="fade-down"
+              data-aos-delay="250"
+              data-aos-duration="1000"
             >
               <svg
                 fill="none"
@@ -373,6 +377,7 @@
       </div>
     </section>
   </main>
+  <Contact />
 </section>
 
 <style>

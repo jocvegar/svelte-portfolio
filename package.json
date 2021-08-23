@@ -21,6 +21,7 @@
 	"dependencies": {
 		"aos": "^2.3.4",
 		"rough-notation": "^0.5.1",
-		"svelte-rough-notation": "^0.1.4"
+		"svelte-rough-notation": "^0.1.4",
+		"svelte-scrollto": "^0.2.0"
 	}
 }
