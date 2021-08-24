@@ -15,8 +15,8 @@
     class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
   >
     <a
+      name="home"
       on:click={goHome}
-      href={"#"}
       class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
     >
       <svg
@@ -43,7 +43,7 @@
     >
       <a
         class="mr-5 transition duration-500 ease-in-out hover:text-anaranjado transform hover:-translate-y-1 hover:scale-110"
-        href={"#"}
+        name="navigation"
         on:click={() =>
           animateScroll.scrollTo({
             element: "#div1",
@@ -54,20 +54,23 @@
       </a>
 
       <a
-        href={"#"}
+        name="navigation"
         class="mr-5 transition duration-500 ease-in-out hover:text-anaranjado transform hover:-translate-y-1 hover:scale-110"
-        >Second Link</a
       >
+        Second Link
+      </a>
       <a
-        href={"#"}
+        name="navigation"
         class="mr-5 transition duration-500 ease-in-out hover:text-anaranjado transform hover:-translate-y-1 hover:scale-110"
-        >Third Link</a
       >
+        Third Link
+      </a>
       <a
-        href={"#"}
+        name="navigation"
         class="mr-5 transition duration-500 ease-in-out hover:text-anaranjado transform hover:-translate-y-1 hover:scale-110"
-        >Fourth Link</a
       >
+        Fourth Link
+      </a>
     </nav>
 
     <button
