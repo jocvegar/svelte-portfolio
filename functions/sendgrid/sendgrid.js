@@ -1,4 +1,4 @@
-const client = require("@sendgrid/mail");
+import sgMail from "@sendgrid/mail";
 
 // function sendEmail(client, message, senderEmail, senderName) {
 //   return new Promise((fulfill, reject) => {
@@ -38,7 +38,7 @@ exports.handler = function (event, context, callback) {
   //   .then((response) => callback(null, { statusCode: response.statusCode }))
   //   .catch((err) => callback(err, null));
 
-  client.setApiKey(process.env.SENDGRID_API_KEY);
+  sgMail.setApiKey(process.env.SENDGRID_API_KEY);
   const msg = {
     to: "jocvegar@gmail.com",
     from: "jocvegar@gmail.com",
@@ -46,7 +46,15 @@ exports.handler = function (event, context, callback) {
     text: "and easy to do anywhere, even with Node.js",
     html: "<strong>and easy to do anywhere, even with Node.js</strong>",
   };
-  client.send(msg);
+  // const send = client.send(msg);
+  // console.log(`send`, send);
+
+  sgMail
+    .send(msg)
+    .then((data) => console.log(`data`, data))
+    .catch((err) => {
+      console.log(err);
+    });
 };
 
 // using Twilio SendGrid's v3 Node.js Library
