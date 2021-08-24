@@ -9,6 +9,7 @@
   import AOS from "aos";
   import "aos/dist/aos.css"; // You can also use <link> for styles
   import userData from "./constants/userData";
+  import axios from "axios";
 
   let visible = false;
 
@@ -21,13 +22,13 @@
   });
 
   const test = async () => {
-    console.log("hi!!");
-
-    const response = await fetch("/.netlify/functions/hello-world/hello-world");
-    console.log(`response`, response);
-    if (!response.ok) {
-      const message = `An error has occured: ${response.status}`;
-      throw new Error(message);
+    try {
+      await axios.post("/.netlify/functions/sendgrid/sendgrid", {
+        message: "HOLA JOC!",
+      });
+    } catch (e) {
+      console.error(e);
+      alert("Your message could not be sent. Sorry about that.");
     }
   };
 </script>
