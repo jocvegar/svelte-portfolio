@@ -1,4 +1,4 @@
-import sgMail from "@sendgrid/mail";
+import * as sgMail from "@sendgrid/mail";
 
 // function sendEmail(client, message, senderEmail, senderName) {
 //   return new Promise((fulfill, reject) => {
