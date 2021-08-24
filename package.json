@@ -19,6 +19,7 @@
 		"tailwindcss": "^2.2.4"
 	},
 	"dependencies": {
+		"@sendgrid/mail": "^7.4.6",
 		"aos": "^2.3.4",
 		"rough-notation": "^0.5.1",
 		"svelte-rough-notation": "^0.1.4",
