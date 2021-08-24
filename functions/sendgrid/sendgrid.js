@@ -24,10 +24,14 @@ function sendEmail(client, message, senderEmail, senderName) {
 exports.handler = function (event, context, callback) {
   const { SENDGRID_API_KEY, SENDGRID_SENDER_EMAIL, SENDGRID_SENDER_NAME } =
     process.env;
+  console.log(`SENDGRID_API_KEY`, SENDGRID_API_KEY);
+  console.log(`SENDGRID_SENDER_EMAIL`, SENDGRID_SENDER_EMAIL);
+  console.log(`SENDGRID_SENDER_NAME`, SENDGRID_SENDER_NAME);
 
   const body = JSON.parse(event.body);
   const message = body.message;
-
+  console.log(`body`, body);
+  console.log(`message`, message);
   client.setApiKey(SENDGRID_API_KEY);
 
   sendEmail(client, message, SENDGRID_SENDER_EMAIL, SENDGRID_SENDER_NAME)
