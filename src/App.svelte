@@ -19,6 +19,17 @@
       visible = true;
     }, 500);
   });
+
+  const test = async () => {
+    console.log("hi!!");
+
+    const response = await fetch("/.netlify/functions/hello-world/hello-world");
+    console.log(`response`, response);
+    if (!response.ok) {
+      const message = `An error has occured: ${response.status}`;
+      throw new Error(message);
+    }
+  };
 </script>
 
 <svelte:head>
@@ -28,6 +39,12 @@
 <section>
   <Nav />
   <main>
+    <button
+      on:click|preventDefault={test}
+      class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg"
+    >
+      Trigger function
+    </button>
     <section class="text-gray-600 body-font">
       <div
         class="container mx-auto flex px-5 py-20 md:flex-row flex-col items-center"
