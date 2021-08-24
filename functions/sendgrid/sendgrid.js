@@ -1,4 +1,5 @@
-import * as sgMail from "@sendgrid/mail";
+// import * as sgMail from "@sendgrid/mail";
+const sgMail = require("@sendgrid/mail");
 
 // function sendEmail(client, message, senderEmail, senderName) {
 //   return new Promise((fulfill, reject) => {
@@ -53,7 +54,7 @@ exports.handler = function (event, context, callback) {
     .send(msg)
     .then((data) => console.log(`data`, data))
     .catch((err) => {
-      console.log(err);
+      console.log("aca err", err);
     });
 };
 
