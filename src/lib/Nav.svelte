@@ -1,4 +1,5 @@
 <script>
+  import userData from "../constants/userData";
   import * as animateScroll from "svelte-scrollto";
 
   const goHome = () => {
@@ -35,7 +36,7 @@
         />
       </svg>
 
-      <span class="ml-3 text-xl">Jose Vega</span>
+      <span class="ml-3 text-xl">{userData.name}</span>
     </a>
 
     <nav
@@ -81,7 +82,7 @@
           offset: 50,
         })}
     >
-      Contacto
+      Contact
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="w-4 h-4 ml-1"
