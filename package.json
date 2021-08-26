@@ -23,7 +23,9 @@
 		"aos": "^2.3.4",
 		"axios": "^0.21.1",
 		"rough-notation": "^0.5.1",
+		"svelte-forms-lib": "^1.10.5",
 		"svelte-rough-notation": "^0.1.4",
-		"svelte-scrollto": "^0.2.0"
+		"svelte-scrollto": "^0.2.0",
+		"yup": "^0.32.9"
 	}
 }

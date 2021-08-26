@@ -1,7 +1,5 @@
 <script>
   // @ts-nocheck
-  // import logo from "./assets/svelte.png";
-  // import jose from "./assets/jose.png";
   import Counter from "./lib/Counter.svelte";
   import Nav from "./lib/Nav.svelte";
   import Contact from "./lib/Contact.svelte";
@@ -9,7 +7,7 @@
   import Annotation from "svelte-rough-notation";
   import { onMount } from "svelte";
   import AOS from "aos";
-  import "aos/dist/aos.css"; // You can also use <link> for styles
+  import "aos/dist/aos.css";
   import userData from "./constants/userData";
   import axios from "axios";
   import * as animateScroll from "svelte-scrollto";
@@ -300,14 +298,19 @@
         </div>
         <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
           <div class="p-2 sm:w-1/2 w-full">
-            <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+            <div
+              class="bg-gray-100 rounded flex p-4 h-full items-center"
+              data-aos="fade-down"
+              data-aos-delay="100"
+              data-aos-once="true"
+            >
               <svg
                 fill="none"
                 stroke="currentColor"
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="3"
-                class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
+                class="text-anaranjado w-6 h-6 flex-shrink-0 mr-4"
                 viewBox="0 0 24 24"
               >
                 <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
@@ -318,14 +321,19 @@
             </div>
           </div>
           <div class="p-2 sm:w-1/2 w-full">
-            <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+            <div
+              class="bg-gray-100 rounded flex p-4 h-full items-center"
+              data-aos="fade-down"
+              data-aos-delay="150"
+              data-aos-once="true"
+            >
               <svg
                 fill="none"
                 stroke="currentColor"
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="3"
-                class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
+                class="text-anaranjado w-6 h-6 flex-shrink-0 mr-4"
                 viewBox="0 0 24 24"
               >
                 <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
@@ -336,14 +344,19 @@
             </div>
           </div>
           <div class="p-2 sm:w-1/2 w-full">
-            <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+            <div
+              class="bg-gray-100 rounded flex p-4 h-full items-center"
+              data-aos="fade-down"
+              data-aos-delay="200"
+              data-aos-once="true"
+            >
               <svg
                 fill="none"
                 stroke="currentColor"
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="3"
-                class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
+                class="text-anaranjado w-6 h-6 flex-shrink-0 mr-4"
                 viewBox="0 0 24 24"
               >
                 <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
@@ -353,14 +366,19 @@
             </div>
           </div>
           <div class="p-2 sm:w-1/2 w-full">
-            <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+            <div
+              class="bg-gray-100 rounded flex p-4 h-full items-center"
+              data-aos="fade-down"
+              data-aos-delay="250"
+              data-aos-once="true"
+            >
               <svg
                 fill="none"
                 stroke="currentColor"
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="3"
-                class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
+                class="text-anaranjado w-6 h-6 flex-shrink-0 mr-4"
                 viewBox="0 0 24 24"
               >
                 <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
@@ -372,14 +390,19 @@
             </div>
           </div>
           <div class="p-2 sm:w-1/2 w-full">
-            <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+            <div
+              class="bg-gray-100 rounded flex p-4 h-full items-center"
+              data-aos="fade-down"
+              data-aos-delay="300"
+              data-aos-once="true"
+            >
               <svg
                 fill="none"
                 stroke="currentColor"
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="3"
-                class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
+                class="text-anaranjado w-6 h-6 flex-shrink-0 mr-4"
                 viewBox="0 0 24 24"
               >
                 <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
@@ -389,14 +412,19 @@
             </div>
           </div>
           <div class="p-2 sm:w-1/2 w-full">
-            <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+            <div
+              class="bg-gray-100 rounded flex p-4 h-full items-center"
+              data-aos="fade-down"
+              data-aos-delay="350"
+              data-aos-once="true"
+            >
               <svg
                 fill="none"
                 stroke="currentColor"
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="3"
-                class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
+                class="text-anaranjado w-6 h-6 flex-shrink-0 mr-4"
                 viewBox="0 0 24 24"
               >
                 <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
@@ -407,9 +435,10 @@
           </div>
         </div>
         <button
-          class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
-          >Button</button
+          class="flex mx-auto mt-16 text-white bg-anaranjado border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
         >
+          Button
+        </button>
       </div>
     </section>
   </main>
@@ -425,7 +454,7 @@
               <div class="h-full w-1 bg-gray-200 pointer-events-none" />
             </div>
             <div
-              class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10"
+              class="flex-shrink-0 w-10 h-10 rounded-full bg-anaranjado inline-flex items-center justify-center text-white relative z-10"
             >
               <svg
                 fill="none"
@@ -458,7 +487,7 @@
               <div class="h-full w-1 bg-gray-200 pointer-events-none" />
             </div>
             <div
-              class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10"
+              class="flex-shrink-0 w-10 h-10 rounded-full bg-anaranjado inline-flex items-center justify-center text-white relative z-10"
             >
               <svg
                 fill="none"
@@ -491,7 +520,7 @@
               <div class="h-full w-1 bg-gray-200 pointer-events-none" />
             </div>
             <div
-              class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10"
+              class="flex-shrink-0 w-10 h-10 rounded-full bg-anaranjado inline-flex items-center justify-center text-white relative z-10"
             >
               <svg
                 fill="none"
@@ -525,7 +554,7 @@
               <div class="h-full w-1 bg-gray-200 pointer-events-none" />
             </div>
             <div
-              class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10"
+              class="flex-shrink-0 w-10 h-10 rounded-full bg-anaranjado inline-flex items-center justify-center text-white relative z-10"
             >
               <svg
                 fill="none"
@@ -554,7 +583,7 @@
           </div>
           <div class="flex relative">
             <div
-              class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10"
+              class="flex-shrink-0 w-10 h-10 rounded-full bg-anaranjado inline-flex items-center justify-center text-white relative z-10"
             >
               <svg
                 fill="none"

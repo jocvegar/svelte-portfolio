@@ -51,26 +51,26 @@
             offset: 50,
           })}
       >
-        First Link
+        About
       </a>
 
       <a
         name="navigation"
         class="mr-5 transition duration-500 ease-in-out hover:text-anaranjado transform hover:-translate-y-1 hover:scale-110"
       >
-        Second Link
+        Projects
       </a>
       <a
         name="navigation"
         class="mr-5 transition duration-500 ease-in-out hover:text-anaranjado transform hover:-translate-y-1 hover:scale-110"
       >
-        Third Link
+        No idea
       </a>
       <a
         name="navigation"
         class="mr-5 transition duration-500 ease-in-out hover:text-anaranjado transform hover:-translate-y-1 hover:scale-110"
       >
-        Fourth Link
+        There
       </a>
     </nav>
 
