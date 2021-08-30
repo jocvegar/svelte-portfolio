@@ -4,6 +4,7 @@
   import Nav from "./lib/Nav.svelte";
   import Contact from "./lib/Contact.svelte";
   import Footer from "./lib/Footer.svelte";
+  import Tech from "./lib/Tech.svelte";
   import Annotation from "svelte-rough-notation";
   import { onMount } from "svelte";
   import AOS from "aos";
@@ -94,10 +95,10 @@
           /> -->
           <lottie-player
             class="object-cover object-center"
-            src="https://assets7.lottiefiles.com/packages/lf20_Yiahbq.json"
+            src="https://assets4.lottiefiles.com/packages/lf20_hntzYU.json"
             background="transparent"
             speed="1"
-            style="width: 550px; height: 550px;"
+            style="width: 100%; height: 100%;"
             loop
             autoplay
             data-aos="fade-down"
@@ -611,14 +612,11 @@
             </div>
           </div>
         </div>
-        <!-- <img
-          class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12"
-          src="https://dummyimage.com/1200x500"
-          alt="step"
-        /> -->
       </div>
     </div>
   </section>
+
+  <Tech />
   <Contact />
   <Footer />
 </section>
