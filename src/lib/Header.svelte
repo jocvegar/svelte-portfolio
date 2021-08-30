@@ -1,6 +1,6 @@
 <script>
   export let title = "Jose Vega";
-  export let description = "Freelance Software Developer";
+  export let description = "";
 </script>
 
 <div class="text-center mb-20">

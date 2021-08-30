@@ -47,7 +47,7 @@
         name="navigation"
         on:click={() =>
           animateScroll.scrollTo({
-            element: "#div1",
+            element: "#about",
             offset: 50,
           })}
       >
@@ -57,20 +57,35 @@
       <a
         name="navigation"
         class="mr-5 transition duration-500 ease-in-out hover:text-anaranjado transform hover:-translate-y-1 hover:scale-110"
+        on:click={() =>
+          animateScroll.scrollTo({
+            element: "#employement",
+            offset: 50,
+          })}
+      >
+        Employement
+      </a>
+      <a
+        name="navigation"
+        class="mr-5 transition duration-500 ease-in-out hover:text-anaranjado transform hover:-translate-y-1 hover:scale-110"
+        on:click={() =>
+          animateScroll.scrollTo({
+            element: "#projects",
+            offset: 50,
+          })}
       >
         Projects
       </a>
       <a
         name="navigation"
         class="mr-5 transition duration-500 ease-in-out hover:text-anaranjado transform hover:-translate-y-1 hover:scale-110"
+        on:click={() =>
+          animateScroll.scrollTo({
+            element: "#tech",
+            offset: 50,
+          })}
       >
-        No idea
-      </a>
-      <a
-        name="navigation"
-        class="mr-5 transition duration-500 ease-in-out hover:text-anaranjado transform hover:-translate-y-1 hover:scale-110"
-      >
-        There
+        Tech Stack
       </a>
     </nav>
 

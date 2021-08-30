@@ -57,8 +57,11 @@
   ];
 </script>
 
-<section class="my-16 py-16 bg-gray-100">
-  <Header title="Holis" />
+<section id="projects" class="my-16 py-16 bg-gray-100">
+  <Header
+    title="Projects"
+    description="A small collection of my favorite and most interesting projects"
+  />
   <Swiper
     modules={[Navigation, Pagination, Autoplay]}
     autoplay

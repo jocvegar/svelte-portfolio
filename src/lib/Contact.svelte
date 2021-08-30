@@ -2,6 +2,8 @@
   import userData from "../constants/userData";
   import { createForm } from "svelte-forms-lib";
   import * as yup from "yup";
+  import Header from "./Header.svelte";
+  import axios from "axios";
 
   const { form, errors, handleChange, handleSubmit } = createForm({
     initialValues: {
@@ -15,24 +17,39 @@
       message: yup.string().required(),
     }),
     onSubmit: (values) => {
-      console.log(`values`, values);
+      sendEmail(values.name, values.email, values.message);
     },
   });
+
+  const sendEmail = async (name, email, message) => {
+    try {
+      await axios.post("/.netlify/functions/sendgrid/sendgrid", {
+        message:
+          `<br>` +
+          "Name: " +
+          name +
+          `<br>` +
+          "Email: " +
+          email +
+          `<br>` +
+          "Message: " +
+          message +
+          `<br>`,
+      });
+    } catch (e) {
+      console.error(e);
+      alert("Your message could not be sent. Sorry about that.");
+    }
+  };
 </script>
 
 <section id="contact" class="text-gray-600 body-font relative bg-gray-100">
   <div class="container px-5 py-24 mx-auto">
-    <div class="flex flex-col text-center w-full mb-12">
-      <h1
-        class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900"
-      >
-        Contact Me
-      </h1>
-      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
-        Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-        gentrify.
-      </p>
-    </div>
+    <Header
+      title="Contact Me"
+      description="If you have a project in mind, have a question or simply want to say hi, please send me a message"
+    />
+
     <form on:submit={handleSubmit}>
       <div class="lg:w-1/2 md:w-2/3 mx-auto">
         <div class="flex flex-wrap -m-2">

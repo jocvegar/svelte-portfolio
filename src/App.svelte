@@ -1,6 +1,5 @@
 <script>
   // @ts-nocheck
-  import Counter from "./lib/Counter.svelte";
   import Nav from "./lib/Nav.svelte";
   import Contact from "./lib/Contact.svelte";
   import Footer from "./lib/Footer.svelte";
@@ -12,7 +11,6 @@
   import AOS from "aos";
   import "aos/dist/aos.css";
   import userData from "./constants/userData";
-  import axios from "axios";
   import * as animateScroll from "svelte-scrollto";
 
   let visible = false;
@@ -24,17 +22,6 @@
       visible = true;
     }, 500);
   });
-
-  const test = async () => {
-    try {
-      await axios.post("/.netlify/functions/sendgrid/sendgrid", {
-        message: "HOLA JOC!",
-      });
-    } catch (e) {
-      console.error(e);
-      alert("Your message could not be sent. Sorry about that.");
-    }
-  };
 </script>
 
 <svelte:head>
@@ -44,12 +31,6 @@
 <section>
   <Nav />
   <main>
-    <!-- <button
-      on:click|preventDefault={test}
-      class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg"
-    >
-      Trigger function
-    </button> -->
     <section class="text-gray-600 body-font">
       <div
         class="container mx-auto flex px-5 py-20 md:flex-row flex-col items-center"
@@ -62,7 +43,8 @@
           >
             <Annotation bind:visible type="highlight" color="#FF3E00" multiline>
               {userData.name}
-              <br class="hidden lg:inline-block" />A some what developer
+              <br class="hidden lg:inline-block" /> a web developer specializing
+              in delivering awesome products.
             </Annotation>
           </h1>
           <p class="mb-8 leading-relaxed text-2xl">
@@ -72,7 +54,7 @@
             <button
               on:click={() =>
                 animateScroll.scrollTo({
-                  element: "#div1",
+                  element: "#about",
                   offset: 50,
                 })}
               class="inline-flex text-white bg-anaranjado border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg"
@@ -103,174 +85,104 @@
       </div>
     </section>
 
-    <section id="div1" class="text-gray-600 body-font bg-gray-100">
-      <div class="container px-5 py-24 mx-auto">
-        <Header title="Holis" />
-        <div
-          class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6"
-        >
-          <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
-            <div
-              class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-light-anaranjado text-anaranjado mb-5 flex-shrink-0"
-              data-aos="fade-down"
-              data-aos-delay="250"
-              data-aos-duration="1000"
-            >
-              <svg
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                class="w-10 h-10"
-                viewBox="0 0 24 24"
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-16 mx-auto">
+        <div class="flex flex-wrap -m-4">
+          <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+            <div class="h-full text-center">
+              <div
+                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"
               >
-                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-              </svg>
-            </div>
-            <div class="flex-grow">
-              <h2 class="text-gray-900 text-lg title-font font-medium mb-3">
-                Shooting Stars
-              </h2>
-              <p class="leading-relaxed text-base">
-                Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                taxidermy. Gastropub indxgo juice poutine, ramps microdosing
-                banh mi pug VHS try-hard.
-              </p>
-              <a
-                href={"#"}
-                class="mt-3 text-anaranjado inline-flex items-center"
-                >Learn More
                 <svg
                   fill="none"
                   stroke="currentColor"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="2"
-                  class="w-4 h-4 ml-2"
+                  class="w-6 h-6"
                   viewBox="0 0 24 24"
                 >
-                  <path d="M5 12h14M12 5l7 7-7 7" />
+                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+                  <circle cx="12" cy="7" r="4" />
                 </svg>
-              </a>
+              </div>
+              <p class="leading-relaxed">
+                Over the years I have learned the required tools to develop a
+                succesful platform. I have developed projects using services
+                like Braintree, AWS, Heroku, Netlify, Nuxt, Next, among others.
+              </p>
+              <span
+                class="inline-block h-1 w-10 rounded bg-anaranjado mt-6 mb-4"
+              />
             </div>
           </div>
-          <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
-            <div
-              class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-light-anaranjado text-anaranjado mb-5 flex-shrink-0"
-              data-aos="fade-down"
-              data-aos-delay="250"
-              data-aos-duration="1000"
-            >
-              <svg
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                class="w-10 h-10"
-                viewBox="0 0 24 24"
+          <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+            <div class="h-full text-center">
+              <div
+                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"
               >
-                <circle cx="6" cy="6" r="3" />
-                <circle cx="6" cy="18" r="3" />
-                <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12" />
-              </svg>
-            </div>
-            <div class="flex-grow">
-              <h2 class="text-gray-900 text-lg title-font font-medium mb-3">
-                The Catalyzer
-              </h2>
-              <p class="leading-relaxed text-base">
-                Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                taxidermy. Gastropub indxgo juice poutine, ramps microdosing
-                banh mi pug VHS try-hard.
-              </p>
-              <a
-                href={"#"}
-                class="mt-3 text-anaranjado inline-flex items-center"
-                >Learn More
                 <svg
                   fill="none"
                   stroke="currentColor"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="2"
-                  class="w-4 h-4 ml-2"
+                  class="w-6 h-6"
                   viewBox="0 0 24 24"
                 >
-                  <path d="M5 12h14M12 5l7 7-7 7" />
+                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+                  <circle cx="12" cy="7" r="4" />
                 </svg>
-              </a>
+              </div>
+              <p class="leading-relaxed">
+                I am also proficient in several languages and frameworks such as
+                Ruby on Rails, Html, CSS, Vue and React. I can also connect
+                and/or build APIs.
+              </p>
+              <span
+                class="inline-block h-1 w-10 rounded bg-anaranjado mt-6 mb-4"
+              />
             </div>
           </div>
-          <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
-            <div
-              class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-light-anaranjado text-anaranjado mb-5 flex-shrink-0"
-              data-aos="fade-down"
-              data-aos-delay="250"
-              data-aos-duration="1000"
-            >
-              <svg
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                class="w-10 h-10"
-                viewBox="0 0 24 24"
+          <div class="lg:w-1/3 lg:mb-0 p-4">
+            <div class="h-full text-center">
+              <div
+                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"
               >
-                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
-                <circle cx="12" cy="7" r="4" />
-              </svg>
-            </div>
-            <div class="flex-grow">
-              <h2 class="text-gray-900 text-lg title-font font-medium mb-3">
-                Neptune
-              </h2>
-              <p class="leading-relaxed text-base">
-                Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                taxidermy. Gastropub indxgo juice poutine, ramps microdosing
-                banh mi pug VHS try-hard.
-              </p>
-              <a
-                href={"#"}
-                class="mt-3 text-anaranjado inline-flex items-center"
-                >Learn More
                 <svg
                   fill="none"
                   stroke="currentColor"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="2"
-                  class="w-4 h-4 ml-2"
+                  class="w-6 h-6"
                   viewBox="0 0 24 24"
                 >
-                  <path d="M5 12h14M12 5l7 7-7 7" />
+                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+                  <circle cx="12" cy="7" r="4" />
                 </svg>
-              </a>
+              </div>
+
+              <p class="leading-relaxed">
+                I am always interested in learning new languages so if you
+                prefer a specific one or a different stack, we can make it work!
+              </p>
+              <span
+                class="inline-block h-1 w-10 rounded bg-anaranjado mt-6 mb-4"
+              />
             </div>
           </div>
         </div>
-        <button
-          class="flex mx-auto mt-16 text-white bg-anaranjado border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
-          >Button</button
-        >
       </div>
     </section>
-    <section class="text-gray-600 body-font">
+
+    <section id="about" class="text-gray-600 body-font bg-gray-100">
       <div class="container px-5 py-24 mx-auto">
-        <div class="text-center mb-20">
-          <h1
-            class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4"
-          >
-            Raw Denim Heirloom Man Braid
-          </h1>
-          <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-            Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-            taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi
-            pug.
-          </p>
-        </div>
+        <Header
+          title="Design & Development"
+          description="Clean, modern designs - optimized for performance"
+        />
+
         <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
           <div class="p-2 sm:w-1/2 w-full">
             <div
@@ -291,8 +203,7 @@
                 <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
                 <path d="M22 4L12 14.01l-3-3" />
               </svg>
-              <span class="title-font font-medium">Authentic Cliche Forage</span
-              >
+              <span class="title-font font-medium">Unique websites</span>
             </div>
           </div>
           <div class="p-2 sm:w-1/2 w-full">
@@ -314,8 +225,7 @@
                 <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
                 <path d="M22 4L12 14.01l-3-3" />
               </svg>
-              <span class="title-font font-medium">Kinfolk Chips Snackwave</span
-              >
+              <span class="title-font font-medium">Intuitive UX | UI</span>
             </div>
           </div>
           <div class="p-2 sm:w-1/2 w-full">
@@ -337,7 +247,9 @@
                 <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
                 <path d="M22 4L12 14.01l-3-3" />
               </svg>
-              <span class="title-font font-medium">Coloring Book Ethical</span>
+              <span class="title-font font-medium"
+                >Constant communication with client</span
+              >
             </div>
           </div>
           <div class="p-2 sm:w-1/2 w-full">
@@ -359,9 +271,7 @@
                 <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
                 <path d="M22 4L12 14.01l-3-3" />
               </svg>
-              <span class="title-font font-medium"
-                >Typewriter Polaroid Cray</span
-              >
+              <span class="title-font font-medium"> Responsive design </span>
             </div>
           </div>
           <div class="p-2 sm:w-1/2 w-full">
@@ -383,7 +293,7 @@
                 <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
                 <path d="M22 4L12 14.01l-3-3" />
               </svg>
-              <span class="title-font font-medium">Pack Truffaut Blue</span>
+              <span class="title-font font-medium">Continuous monitoring</span>
             </div>
           </div>
           <div class="p-2 sm:w-1/2 w-full">
@@ -405,21 +315,17 @@
                 <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
                 <path d="M22 4L12 14.01l-3-3" />
               </svg>
-              <span class="title-font font-medium">The Catcher In The Rye</span>
+              <span class="title-font font-medium">Unit tests</span>
             </div>
           </div>
         </div>
-        <button
-          class="flex mx-auto mt-16 text-white bg-anaranjado border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
-        >
-          Button
-        </button>
       </div>
     </section>
   </main>
 
-  <section class="text-gray-600 body-font">
-    <div class="container px-5 py-24 mx-auto flex flex-wrap">
+  <section id="employement" class="text-gray-600 body-font py-16 my-16">
+    <Header title="Employement History" />
+    <div class="container mx-auto flex flex-wrap">
       <div class="flex flex-wrap w-full justify-start md:justify-center">
         <div class="md:pr-10 md:py-6">
           <div class="flex relative pb-12">
@@ -431,28 +337,15 @@
             <div
               class="flex-shrink-0 w-10 h-10 rounded-full bg-anaranjado inline-flex items-center justify-center text-white relative z-10"
             >
-              <svg
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                class="w-5 h-5"
-                viewBox="0 0 24 24"
-              >
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-              </svg>
+              1
             </div>
             <div class="flex-grow pl-4">
               <h2
                 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider"
               >
-                STEP 1
+                <a href="https://www.softensity.com/">Softensity</a>
               </h2>
-              <p class="leading-relaxed">
-                VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk
-                bespoke try-hard cliche palo santo offal.
-              </p>
+              <p class="leading-relaxed">(June 2021– August 2021)</p>
             </div>
           </div>
           <div class="flex relative pb-12">
@@ -464,28 +357,15 @@
             <div
               class="flex-shrink-0 w-10 h-10 rounded-full bg-anaranjado inline-flex items-center justify-center text-white relative z-10"
             >
-              <svg
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                class="w-5 h-5"
-                viewBox="0 0 24 24"
-              >
-                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-              </svg>
+              2
             </div>
             <div class="flex-grow pl-4">
               <h2
                 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider"
               >
-                STEP 2
+                <a href="https://ocho.life/">Ocho</a>
               </h2>
-              <p class="leading-relaxed">
-                Vice migas literally kitsch +1 pok pok. Truffaut hot chicken
-                slow-carb health goth, vape typewriter.
-              </p>
+              <p class="leading-relaxed">(Oct. 2020 – June 2021)</p>
             </div>
           </div>
           <div class="flex relative pb-12">
@@ -497,92 +377,31 @@
             <div
               class="flex-shrink-0 w-10 h-10 rounded-full bg-anaranjado inline-flex items-center justify-center text-white relative z-10"
             >
-              <svg
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                class="w-5 h-5"
-                viewBox="0 0 24 24"
-              >
-                <circle cx="12" cy="5" r="3" />
-                <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3" />
-              </svg>
+              3
             </div>
             <div class="flex-grow pl-4">
               <h2
                 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider"
               >
-                STEP 3
+                <a href="https://safetyspot.com/">SafetySpot Inc</a>
               </h2>
-              <p class="leading-relaxed">
-                Coloring book nar whal glossier master cleanse umami. Salvia +1
-                master cleanse blog taiyaki.
-              </p>
+              <p class="leading-relaxed">(Feb. 2017 – June 2020)</p>
             </div>
           </div>
-          <div class="flex relative pb-12">
-            <div
-              class="h-full w-10 absolute inset-0 flex items-center justify-center"
-            >
-              <div class="h-full w-1 bg-gray-200 pointer-events-none" />
-            </div>
-            <div
-              class="flex-shrink-0 w-10 h-10 rounded-full bg-anaranjado inline-flex items-center justify-center text-white relative z-10"
-            >
-              <svg
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                class="w-5 h-5"
-                viewBox="0 0 24 24"
-              >
-                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
-                <circle cx="12" cy="7" r="4" />
-              </svg>
-            </div>
-            <div class="flex-grow pl-4">
-              <h2
-                class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider"
-              >
-                STEP 4
-              </h2>
-              <p class="leading-relaxed">
-                VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk
-                bespoke try-hard cliche palo santo offal.
-              </p>
-            </div>
-          </div>
+
           <div class="flex relative">
             <div
               class="flex-shrink-0 w-10 h-10 rounded-full bg-anaranjado inline-flex items-center justify-center text-white relative z-10"
             >
-              <svg
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                class="w-5 h-5"
-                viewBox="0 0 24 24"
-              >
-                <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
-                <path d="M22 4L12 14.01l-3-3" />
-              </svg>
+              4
             </div>
             <div class="flex-grow pl-4">
               <h2
                 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider"
               >
-                FINISH
+                Independent Consultant
               </h2>
-              <p class="leading-relaxed">
-                Pitchfork ugh tattooed scenester echo park gastropub whatever
-                cold-pressed retro.
-              </p>
+              <p class="leading-relaxed">(Oct. 2016 – Current)</p>
             </div>
           </div>
         </div>
