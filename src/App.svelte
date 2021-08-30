@@ -214,7 +214,9 @@
                 <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
                 <path d="M22 4L12 14.01l-3-3" />
               </svg>
-              <span class="title-font font-medium ">Unique websites</span>
+              <span class="title-font font-medium text-left">
+                Unique websites
+              </span>
             </div>
           </div>
           <div class="p-2 sm:w-1/2 w-full transform hover:scale-105">
@@ -235,7 +237,9 @@
                 <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
                 <path d="M22 4L12 14.01l-3-3" />
               </svg>
-              <span class="title-font font-medium">Intuitive UX | UI</span>
+              <span class="title-font font-medium text-left">
+                Intuitive UX | UI
+              </span>
             </div>
           </div>
           <div class="p-2 sm:w-1/2 w-full transform hover:scale-105">
@@ -256,7 +260,7 @@
                 <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
                 <path d="M22 4L12 14.01l-3-3" />
               </svg>
-              <span class="title-font font-medium">
+              <span class="title-font font-medium text-left">
                 Constant communication with client
               </span>
             </div>
@@ -279,7 +283,9 @@
                 <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
                 <path d="M22 4L12 14.01l-3-3" />
               </svg>
-              <span class="title-font font-medium"> Responsive design </span>
+              <span class="title-font font-medium text-left">
+                Responsive design
+              </span>
             </div>
           </div>
           <div class="p-2 sm:w-1/2 w-full transform hover:scale-105">
@@ -300,7 +306,9 @@
                 <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
                 <path d="M22 4L12 14.01l-3-3" />
               </svg>
-              <span class="title-font font-medium">Continuous monitoring</span>
+              <span class="title-font font-medium text-left">
+                Continuous monitoring
+              </span>
             </div>
           </div>
           <div class="p-2 sm:w-1/2 w-full transform hover:scale-105">
@@ -321,7 +329,7 @@
                 <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
                 <path d="M22 4L12 14.01l-3-3" />
               </svg>
-              <span class="title-font font-medium">Unit tests</span>
+              <span class="title-font font-medium text-left">Unit tests</span>
             </div>
           </div>
         </div>
@@ -331,11 +339,11 @@
 
   <section
     id="employement"
-    class="text-gray-600 body-font py-16 my-16 bg-gray-100"
+    class="text-gray-600 body-font py-16 my-16 bg-gray-100 "
   >
     <Header title="Employement History" />
     <div class="container mx-auto flex flex-wrap">
-      <div class="flex flex-wrap w-full justify-start md:justify-center">
+      <div class="flex flex-wrap w-full justify-center">
         <div class="md:pr-10 md:py-6">
           <div class="flex relative pb-12">
             <div
