@@ -5,6 +5,8 @@
   import Contact from "./lib/Contact.svelte";
   import Footer from "./lib/Footer.svelte";
   import Tech from "./lib/Tech.svelte";
+  import Projects from "./lib/Projects.svelte";
+  import Header from "./lib/Header.svelte";
   import Annotation from "svelte-rough-notation";
   import { onMount } from "svelte";
   import AOS from "aos";
@@ -85,14 +87,6 @@
           </div>
         </div>
         <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-16">
-          <!-- <img
-            class="object-cover object-center rounded-full"
-            alt="hero"
-            src={jose}
-            data-aos="fade-down"
-            data-aos-delay="250"
-            data-aos-duration="1000"
-          /> -->
           <lottie-player
             class="object-cover object-center"
             src="https://assets4.lottiefiles.com/packages/lf20_hntzYU.json"
@@ -109,29 +103,9 @@
       </div>
     </section>
 
-    <div class="py-5">
-      <Counter />
-    </div>
-
     <section id="div1" class="text-gray-600 body-font bg-gray-100">
       <div class="container px-5 py-24 mx-auto">
-        <div class="text-center mb-20">
-          <h1
-            class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4"
-          >
-            Raw Denim Heirloom Man Braid
-          </h1>
-          <p
-            class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500"
-          >
-            Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-            taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi
-            pug.
-          </p>
-          <div class="flex mt-6 justify-center">
-            <div class="w-16 h-1 rounded-full bg-anaranjado inline-flex" />
-          </div>
-        </div>
+        <Header title="Holis" />
         <div
           class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6"
         >
@@ -616,6 +590,7 @@
     </div>
   </section>
 
+  <Projects />
   <Tech />
   <Contact />
   <Footer />

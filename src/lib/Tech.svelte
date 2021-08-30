@@ -1,4 +1,9 @@
-<section class="bg-white dark:bg-gray-800 my-16">
+<script>
+  import Header from "./Header.svelte";
+</script>
+
+<section class="bg-white dark:bg-gray-800 my-16 py-16">
+  <Header title="Holis" />
   <div class="grid grid-cols-2 md:grid-cols-6 px-4 md:px-20 gap-y-12">
     <svg
       viewBox="0 0 128 128"
