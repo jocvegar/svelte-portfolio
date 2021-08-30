@@ -1,6 +1,9 @@
 <script>
   import userData from "../constants/userData";
   import * as animateScroll from "svelte-scrollto";
+  import Hamburger from "./Hamburger.svelte";
+
+  export let sidebar = false;
 
   const goHome = () => {
     window.scroll({
@@ -12,13 +15,12 @@
 </script>
 
 <header class="text-gray-600 body-font">
-  <div
-    class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
-  >
+  <div class="container mx-auto flex flex-wrap p-5 flex-row items-center">
+    <Hamburger bind:open={sidebar} />
     <a
       name="home"
       on:click={goHome}
-      class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+      class="flex title-font font-medium items-center text-gray-900 "
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +42,7 @@
     </a>
 
     <nav
-      class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center"
+      class="md:ml-auto md:mr-auto flex-wrap items-center text-base justify-center hidden text-bold sm:block"
     >
       <a
         class="mr-5 transition duration-500 ease-in-out hover:text-anaranjado transform hover:-translate-y-1 hover:scale-110"
@@ -90,7 +92,7 @@
     </nav>
 
     <button
-      class="transition duration-500 ease-in-out inline-flex items-center bg-gray-100 border-0 py-2 px-4 focus:outline-none hover:bg-anaranjado hover:text-white rounded text-base mt-4 md:mt-0 transform hover:-translate-y-1 hover:scale-110"
+      class="transition duration-500 ease-in-out hidden text-bold sm:inline-flex items-center bg-gray-100 border-0 py-2 px-4 focus:outline-none hover:bg-anaranjado hover:text-white rounded text-base mt-4 md:mt-0 transform hover:-translate-y-1 hover:scale-110"
       on:click={() =>
         animateScroll.scrollTo({
           element: "#contact",

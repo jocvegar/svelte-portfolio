@@ -1,6 +1,7 @@
 <script>
   // @ts-nocheck
   import Nav from "./lib/Nav.svelte";
+  import Sidebar from "./lib/Sidebar.svelte";
   import Contact from "./lib/Contact.svelte";
   import Footer from "./lib/Footer.svelte";
   import Tech from "./lib/Tech.svelte";
@@ -14,13 +15,14 @@
   import * as animateScroll from "svelte-scrollto";
 
   let visible = false;
+  let open = false;
 
   onMount(() => {
     AOS.init();
 
     setTimeout(() => {
       visible = true;
-    }, 500);
+    }, 800);
   });
 </script>
 
@@ -29,11 +31,12 @@
 </svelte:head>
 
 <section>
-  <Nav />
+  <Nav bind:sidebar={open} />
+  <Sidebar bind:open />
   <main>
     <section class="text-gray-600 body-font">
       <div
-        class="container mx-auto flex px-5 py-20 md:flex-row flex-col items-center"
+        class="container mx-auto flex px-5 py-8 md:py-16 md:flex-row flex-col items-center"
       >
         <div
           class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-4 items-center text-center order-last md:order-first"
@@ -43,8 +46,7 @@
           >
             <Annotation bind:visible type="highlight" color="#FF3E00" multiline>
               {userData.name}
-              <br class="hidden lg:inline-block" /> a web developer specializing
-              in delivering awesome products.
+              <br /> a web developer specializing in delivering awesome products.
             </Annotation>
           </h1>
           <p class="mb-8 leading-relaxed text-2xl">
@@ -112,9 +114,9 @@
                 </svg>
               </div>
               <p class="leading-relaxed">
-                Over the years I have learned the required tools to develop a
-                succesful platform. I have developed projects using services
-                like Braintree, AWS, Heroku, Netlify, Nuxt, Next, among others.
+                Over the years, I have learned the required tools to develop
+                succesful platforms using services like Braintree, AWS, Heroku,
+                Netlify, Nuxt, Next, among others.
               </p>
               <span
                 class="inline-block h-1 w-10 rounded bg-anaranjado mt-6 mb-4"
@@ -144,9 +146,8 @@
                 </svg>
               </div>
               <p class="leading-relaxed">
-                I am also proficient in several languages and frameworks such as
-                Ruby on Rails, Html, CSS, Vue and React. I can also connect
-                and/or build APIs.
+                I am proficient in several languages and frameworks such as Ruby
+                on Rails, Html, CSS, APIs, Vue and React.
               </p>
               <span
                 class="inline-block h-1 w-10 rounded bg-anaranjado mt-6 mb-4"
@@ -255,9 +256,9 @@
                 <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
                 <path d="M22 4L12 14.01l-3-3" />
               </svg>
-              <span class="title-font font-medium"
-                >Constant communication with client</span
-              >
+              <span class="title-font font-medium">
+                Constant communication with client
+              </span>
             </div>
           </div>
           <div class="p-2 sm:w-1/2 w-full transform hover:scale-105">

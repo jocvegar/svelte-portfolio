@@ -45,7 +45,7 @@
 </script>
 
 <section id="contact" class="text-gray-600 body-font relative">
-  <div class="container px-5 py-24 mx-auto">
+  <div class="container px-5 py-8 md:py-16 mx-auto">
     <Header
       title="Contact Me"
       description="If you have a project in mind, have a question or simply want to say hi, please send me a message"
@@ -54,7 +54,7 @@
     <form on:submit={handleSubmit}>
       <div class="lg:w-1/2 md:w-2/3 mx-auto">
         <div class="flex flex-wrap -m-2">
-          <div class="p-2 w-1/2">
+          <div class="p-2 w-full md:w-1/2">
             <div class="relative">
               <label for="name" class="leading-7 text-sm text-gray-600">
                 Name
@@ -74,7 +74,7 @@
               {/if}
             </div>
           </div>
-          <div class="p-2 w-1/2">
+          <div class="p-2 w-full md:w-1/2">
             <div class="relative">
               <label for="email" class="leading-7 text-sm text-gray-600">
                 Email
