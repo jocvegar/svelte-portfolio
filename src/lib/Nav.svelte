@@ -42,7 +42,7 @@
     </a>
 
     <nav
-      class="md:ml-auto md:mr-auto flex-wrap items-center text-base justify-center hidden text-bold sm:block"
+      class="md:ml-auto md:mr-auto flex-wrap items-center text-base justify-center hidden text-bold sm:flex"
     >
       <a
         class="mr-5 transition duration-500 ease-in-out hover:text-anaranjado transform hover:-translate-y-1 hover:scale-110"
