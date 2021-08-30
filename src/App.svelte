@@ -85,25 +85,30 @@
       </div>
     </section>
 
-    <section class="text-gray-600 body-font">
+    <section id="about" class="text-gray-600 body-font bg-gray-100">
       <div class="container px-5 py-16 mx-auto">
+        <Header title="About" />
         <div class="flex flex-wrap -m-4">
           <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
             <div class="h-full text-center">
               <div
-                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"
+                class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-light-anaranjado text-anaranjado mb-4"
+                data-aos="fade-down"
+                data-aos-delay="250"
               >
                 <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
                   fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-6 h-6"
                   viewBox="0 0 24 24"
+                  stroke="currentColor"
                 >
-                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
-                  <circle cx="12" cy="7" r="4" />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                  />
                 </svg>
               </div>
               <p class="leading-relaxed">
@@ -119,19 +124,23 @@
           <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
             <div class="h-full text-center">
               <div
-                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"
+                class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-light-anaranjado text-anaranjado mb-4"
+                data-aos="fade-down"
+                data-aos-delay="250"
               >
                 <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
                   fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-6 h-6"
                   viewBox="0 0 24 24"
+                  stroke="currentColor"
                 >
-                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
-                  <circle cx="12" cy="7" r="4" />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                  />
                 </svg>
               </div>
               <p class="leading-relaxed">
@@ -147,7 +156,9 @@
           <div class="lg:w-1/3 lg:mb-0 p-4">
             <div class="h-full text-center">
               <div
-                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"
+                class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-light-anaranjado text-anaranjado mb-4"
+                data-aos="fade-down"
+                data-aos-delay="250"
               >
                 <svg
                   fill="none"
@@ -176,7 +187,7 @@
       </div>
     </section>
 
-    <section id="about" class="text-gray-600 body-font bg-gray-100">
+    <section class="text-gray-600 body-font ">
       <div class="container px-5 py-24 mx-auto">
         <Header
           title="Design & Development"
@@ -184,12 +195,11 @@
         />
 
         <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
-          <div class="p-2 sm:w-1/2 w-full">
+          <div class="p-2 sm:w-1/2 w-full transform hover:scale-105">
             <div
               class="bg-gray-100 rounded flex p-4 h-full items-center"
               data-aos="fade-down"
               data-aos-delay="100"
-              data-aos-once="true"
             >
               <svg
                 fill="none"
@@ -203,15 +213,14 @@
                 <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
                 <path d="M22 4L12 14.01l-3-3" />
               </svg>
-              <span class="title-font font-medium">Unique websites</span>
+              <span class="title-font font-medium ">Unique websites</span>
             </div>
           </div>
-          <div class="p-2 sm:w-1/2 w-full">
+          <div class="p-2 sm:w-1/2 w-full transform hover:scale-105">
             <div
               class="bg-gray-100 rounded flex p-4 h-full items-center"
               data-aos="fade-down"
               data-aos-delay="150"
-              data-aos-once="true"
             >
               <svg
                 fill="none"
@@ -228,12 +237,11 @@
               <span class="title-font font-medium">Intuitive UX | UI</span>
             </div>
           </div>
-          <div class="p-2 sm:w-1/2 w-full">
+          <div class="p-2 sm:w-1/2 w-full transform hover:scale-105">
             <div
               class="bg-gray-100 rounded flex p-4 h-full items-center"
               data-aos="fade-down"
               data-aos-delay="200"
-              data-aos-once="true"
             >
               <svg
                 fill="none"
@@ -252,12 +260,11 @@
               >
             </div>
           </div>
-          <div class="p-2 sm:w-1/2 w-full">
+          <div class="p-2 sm:w-1/2 w-full transform hover:scale-105">
             <div
               class="bg-gray-100 rounded flex p-4 h-full items-center"
               data-aos="fade-down"
               data-aos-delay="250"
-              data-aos-once="true"
             >
               <svg
                 fill="none"
@@ -274,12 +281,11 @@
               <span class="title-font font-medium"> Responsive design </span>
             </div>
           </div>
-          <div class="p-2 sm:w-1/2 w-full">
+          <div class="p-2 sm:w-1/2 w-full transform hover:scale-105">
             <div
               class="bg-gray-100 rounded flex p-4 h-full items-center"
               data-aos="fade-down"
               data-aos-delay="300"
-              data-aos-once="true"
             >
               <svg
                 fill="none"
@@ -296,12 +302,11 @@
               <span class="title-font font-medium">Continuous monitoring</span>
             </div>
           </div>
-          <div class="p-2 sm:w-1/2 w-full">
+          <div class="p-2 sm:w-1/2 w-full transform hover:scale-105">
             <div
               class="bg-gray-100 rounded flex p-4 h-full items-center"
               data-aos="fade-down"
               data-aos-delay="350"
-              data-aos-once="true"
             >
               <svg
                 fill="none"
@@ -323,7 +328,10 @@
     </section>
   </main>
 
-  <section id="employement" class="text-gray-600 body-font py-16 my-16">
+  <section
+    id="employement"
+    class="text-gray-600 body-font py-16 my-16 bg-gray-100"
+  >
     <Header title="Employement History" />
     <div class="container mx-auto flex flex-wrap">
       <div class="flex flex-wrap w-full justify-start md:justify-center">

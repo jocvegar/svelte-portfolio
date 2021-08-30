@@ -57,7 +57,7 @@
   ];
 </script>
 
-<section id="projects" class="my-16 py-16 bg-gray-100">
+<section id="projects" class="my-16 py-16">
   <Header
     title="Projects"
     description="A small collection of my favorite and most interesting projects"

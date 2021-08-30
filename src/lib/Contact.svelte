@@ -5,7 +5,7 @@
   import Header from "./Header.svelte";
   import axios from "axios";
 
-  const { form, errors, handleChange, handleSubmit } = createForm({
+  const { form, errors, handleChange, handleSubmit, handleReset } = createForm({
     initialValues: {
       name: "",
       email: "",
@@ -18,6 +18,7 @@
     }),
     onSubmit: (values) => {
       sendEmail(values.name, values.email, values.message);
+      handleReset();
     },
   });
 
@@ -43,7 +44,7 @@
   };
 </script>
 
-<section id="contact" class="text-gray-600 body-font relative bg-gray-100">
+<section id="contact" class="text-gray-600 body-font relative">
   <div class="container px-5 py-24 mx-auto">
     <Header
       title="Contact Me"
