@@ -4,6 +4,7 @@
   import * as yup from "yup";
   import Header from "./Header.svelte";
   import axios from "axios";
+  export let alert = false;
 
   const { form, errors, handleChange, handleSubmit, handleReset } = createForm({
     initialValues: {
@@ -19,6 +20,12 @@
     onSubmit: (values) => {
       sendEmail(values.name, values.email, values.message);
       handleReset();
+      window.scroll({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+      });
+      alert = !alert;
     },
   });
 
@@ -39,6 +46,7 @@
       });
     } catch (e) {
       console.error(e);
+      // @ts-ignore
       alert("Your message could not be sent. Sorry about that.");
     }
   };

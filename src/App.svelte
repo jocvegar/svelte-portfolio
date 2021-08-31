@@ -5,6 +5,7 @@
   import Contact from "./lib/Contact.svelte";
   import Footer from "./lib/Footer.svelte";
   import Tech from "./lib/Tech.svelte";
+  import Alert from "./lib/Alert.svelte";
   import Projects from "./lib/Projects.svelte";
   import Header from "./lib/Header.svelte";
   import Annotation from "svelte-rough-notation";
@@ -16,6 +17,7 @@
 
   let visible = false;
   let open = false;
+  let alert = false;
 
   onMount(() => {
     AOS.init();
@@ -33,6 +35,8 @@
 <section>
   <Nav bind:sidebar={open} />
   <Sidebar bind:open />
+  <Alert bind:alert />
+
   <main>
     <section class="text-gray-600 body-font">
       <div
@@ -428,7 +432,7 @@
 
   <Projects />
   <Tech />
-  <Contact />
+  <Contact bind:alert />
   <Footer />
 </section>
 
