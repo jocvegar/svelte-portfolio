@@ -50,7 +50,8 @@
           >
             <Annotation bind:visible type="highlight" color="#FF3E00" multiline>
               {userData.name}
-              <br /> a web developer specializing in delivering awesome products.
+              <br />
+              {userData.designation}
             </Annotation>
           </h1>
           <p class="mb-8 leading-relaxed text-2xl">
