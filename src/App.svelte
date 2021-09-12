@@ -15,16 +15,15 @@
   import userData from "./constants/userData";
   import * as animateScroll from "svelte-scrollto";
 
-  let visible = false;
+  const visible = [false, false];
   let open = false;
   let alert = false;
 
   onMount(() => {
     AOS.init();
 
-    setTimeout(() => {
-      visible = true;
-    }, 800);
+    setTimeout(() => (visible[0] = true), 1200);
+    setTimeout(() => (visible[1] = true), 2000);
   });
 </script>
 
@@ -48,14 +47,27 @@
           <h1
             class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-200"
           >
-            <Annotation bind:visible type="highlight" color="#FF3E00" multiline>
+            <Annotation
+              bind:visible={visible[0]}
+              type="highlight"
+              color="#FF3E00"
+              multiline
+            >
               {userData.name}
               <br />
               {userData.designation}
             </Annotation>
           </h1>
           <p class="mb-8 leading-relaxed text-2xl">
-            {userData.about.title}
+            I'm a software developer that
+            <Annotation
+              bind:visible={visible[1]}
+              type="underline"
+              color="#FF3E00"
+            >
+              loves
+            </Annotation>
+            building products and web applications that make life a little easier.
           </p>
           <div class="flex justify-center">
             <button
@@ -105,7 +117,7 @@
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
+                  class="h-10 w-10"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -137,7 +149,7 @@
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
+                  class="h-10 w-10"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -172,7 +184,7 @@
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="2"
-                  class="w-6 h-6"
+                  class="h-10 w-10"
                   viewBox="0 0 24 24"
                 >
                   <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
@@ -363,11 +375,11 @@
             </div>
             <div class="flex-grow pl-4">
               <h2
-                class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider"
+                class="font-medium title-font text-lg text-gray-900 mb-1 tracking-wider"
               >
-                <a href="https://www.softensity.com/">Softensity</a>
+                <a href="https://www.encora.com/">Encora</a>
               </h2>
-              <p class="leading-relaxed">(June 2021– August 2021)</p>
+              <p class="leading-relaxed">(August 2021 - present)</p>
             </div>
           </div>
           <div class="flex relative pb-12">
@@ -383,7 +395,28 @@
             </div>
             <div class="flex-grow pl-4">
               <h2
-                class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider"
+                class="font-medium title-font text-lg text-gray-900 mb-1 tracking-wider"
+              >
+                <a href="https://www.softensity.com/">Softensity</a>
+              </h2>
+              <p class="leading-relaxed">(June 2021– August 2021)</p>
+            </div>
+          </div>
+
+          <div class="flex relative pb-12">
+            <div
+              class="h-full w-10 absolute inset-0 flex items-center justify-center"
+            >
+              <div class="h-full w-1 bg-gray-200 pointer-events-none" />
+            </div>
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full bg-anaranjado inline-flex items-center justify-center text-white relative z-10"
+            >
+              3
+            </div>
+            <div class="flex-grow pl-4">
+              <h2
+                class="font-medium title-font text-lg text-gray-900 mb-1 tracking-wider"
               >
                 <a href="https://ocho.life/">Ocho</a>
               </h2>
@@ -399,11 +432,11 @@
             <div
               class="flex-shrink-0 w-10 h-10 rounded-full bg-anaranjado inline-flex items-center justify-center text-white relative z-10"
             >
-              3
+              4
             </div>
             <div class="flex-grow pl-4">
               <h2
-                class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider"
+                class="font-medium title-font text-lg text-gray-900 mb-1 tracking-wider"
               >
                 <a href="https://safetyspot.com/">SafetySpot Inc</a>
               </h2>
@@ -415,11 +448,11 @@
             <div
               class="flex-shrink-0 w-10 h-10 rounded-full bg-anaranjado inline-flex items-center justify-center text-white relative z-10"
             >
-              4
+              5
             </div>
             <div class="flex-grow pl-4">
               <h2
-                class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider"
+                class="font-medium title-font text-lg text-gray-900 mb-1 tracking-wider"
               >
                 Independent Consultant
               </h2>
