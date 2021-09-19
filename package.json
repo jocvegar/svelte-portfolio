@@ -26,6 +26,7 @@
 		"svelte-forms-lib": "^1.10.5",
 		"svelte-rough-notation": "^0.1.4",
 		"svelte-scrollto": "^0.2.0",
+		"sveltejs-tippy": "^3.0.0",
 		"swiper": "^7.0.1",
 		"yup": "^0.32.9"
 	}

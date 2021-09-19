@@ -1,4 +1,5 @@
 <script>
+  import tippy from "sveltejs-tippy";
   import Header from "./Header.svelte";
 </script>
 
@@ -6,6 +7,7 @@
   <Header title="Tech Stack" />
   <div class="grid grid-cols-2 md:grid-cols-6 px-4 md:px-20 gap-y-12">
     <svg
+      use:tippy={{ content: "Ruby on Rails" }}
       viewBox="0 0 128 128"
       class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
     >
@@ -22,6 +24,7 @@
     </svg>
 
     <svg
+      use:tippy={{ content: "Ruby" }}
       viewBox="0 0 128 128"
       class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
     >
@@ -339,31 +342,37 @@
     </svg>
 
     <img
+      use:tippy={{ content: "JavaScript" }}
       alt="logo"
       src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"
       class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
     />
     <img
+      use:tippy={{ content: "TypeScript" }}
       alt="logo"
       src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"
       class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
     />
     <img
+      use:tippy={{ content: "HMTL" }}
       alt="logo"
       src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"
       class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
     />
     <img
+      use:tippy={{ content: "CSS" }}
       alt="logo"
       src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"
       class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
     />
     <img
+      use:tippy={{ content: "Vue" }}
       alt="logo"
       src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/vue/vue.png"
       class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
     />
     <svg
+      use:tippy={{ content: "Git" }}
       viewBox="0 0 128 128"
       class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
     >
@@ -373,17 +382,20 @@
       />
     </svg>
     <img
+      use:tippy={{ content: "React" }}
       alt="logo"
       src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"
       class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
     />
     <img
+      use:tippy={{ content: "Firebae" }}
       alt="logo"
       src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png"
       class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
     />
 
     <svg
+      use:tippy={{ content: "AWS" }}
       viewBox="0 0 128 128"
       class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
     >
@@ -394,6 +406,7 @@
     </svg>
 
     <svg
+      use:tippy={{ content: "Bootstrap" }}
       viewBox="0 0 128 128"
       class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
     >
@@ -418,6 +431,7 @@
     </svg>
 
     <svg
+      use:tippy={{ content: "GCP" }}
       viewBox="0 0 128 128"
       class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
     >
@@ -437,6 +451,7 @@
     </svg>
 
     <svg
+      use:tippy={{ content: "GraphQl" }}
       viewBox="0 0 128 128"
       class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
     >
@@ -458,6 +473,7 @@
     </svg>
 
     <svg
+      use:tippy={{ content: "Heroku" }}
       viewBox="0 0 128 128"
       class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
     >
@@ -468,6 +484,7 @@
     </svg>
 
     <svg
+      use:tippy={{ content: "Jest" }}
       viewBox="0 0 128 128"
       class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
     >
@@ -478,6 +495,7 @@
     </svg>
 
     <svg
+      use:tippy={{ content: "Material UI" }}
       viewBox="0 0 128 128"
       class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
     >
@@ -494,6 +512,7 @@
     </svg>
 
     <svg
+      use:tippy={{ content: "Next.js" }}
       viewBox="0 0 128 128"
       class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
     >
@@ -503,6 +522,7 @@
     </svg>
 
     <svg
+      use:tippy={{ content: "Node" }}
       viewBox="0 0 128 128"
       class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
     >
@@ -513,6 +533,7 @@
     </svg>
 
     <svg
+      use:tippy={{ content: "Nuxt" }}
       viewBox="0 0 128 128"
       class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
     >
@@ -529,6 +550,7 @@
     </svg>
 
     <svg
+      use:tippy={{ content: "PostgresQl" }}
       viewBox="0 0 128 128"
       class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
     >
@@ -546,6 +568,7 @@
     </svg>
 
     <svg
+      use:tippy={{ content: "Svelte" }}
       viewBox="0 0 128 128"
       class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
     >
@@ -559,6 +582,7 @@
     </svg>
 
     <svg
+      use:tippy={{ content: "Tailwind" }}
       viewBox="0 0 128 128"
       class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
     >
@@ -569,6 +593,7 @@
     </svg>
 
     <svg
+      use:tippy={{ content: "Trello" }}
       viewBox="0 0 128 128"
       class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
     >
