@@ -76,12 +76,12 @@
                   element: "#about",
                   offset: 50,
                 })}
-              class="inline-flex text-white bg-anaranjado border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg"
+              class="inline-flex text-white bg-anaranjado border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg shadow-md"
             >
               More
             </button>
             <button
-              class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg"
+              class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg shadow-md"
             >
               <a href="/JoseVegaCV.pdf" download> Download Resume </a>
             </button>
@@ -111,7 +111,7 @@
           <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
             <div class="h-full text-center">
               <div
-                class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-light-anaranjado text-anaranjado mb-4"
+                class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-light-anaranjado text-anaranjado mb-4 shadow"
                 data-aos="fade-down"
                 data-aos-delay="250"
               >
@@ -143,7 +143,7 @@
           <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
             <div class="h-full text-center">
               <div
-                class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-light-anaranjado text-anaranjado mb-4"
+                class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-light-anaranjado text-anaranjado mb-4 shadow"
                 data-aos="fade-down"
                 data-aos-delay="250"
               >
@@ -164,7 +164,7 @@
               </div>
               <p class="leading-relaxed">
                 I am proficient in several languages and frameworks such as Ruby
-                on Rails, Html, CSS, APIs, Vue and React.
+                on Rails, HTML, CSS, APIs, Vue and React.
               </p>
               <span
                 class="inline-block h-1 w-10 rounded bg-anaranjado mt-6 mb-4"
@@ -174,7 +174,7 @@
           <div class="lg:w-1/3 lg:mb-0 p-4">
             <div class="h-full text-center">
               <div
-                class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-light-anaranjado text-anaranjado mb-4"
+                class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-light-anaranjado text-anaranjado mb-4 shadow"
                 data-aos="fade-down"
                 data-aos-delay="250"
               >
@@ -359,109 +359,114 @@
     class="text-gray-600 body-font py-16 my-16 bg-gray-100 "
   >
     <Header title="Employement History" />
-    <div class="container mx-auto flex flex-wrap">
-      <div class="flex flex-wrap w-full justify-center">
-        <div class="md:pr-10 md:py-6">
-          <div class="flex relative pb-12">
-            <div
-              class="h-full w-10 absolute inset-0 flex items-center justify-center"
-            >
-              <div class="h-full w-1 bg-gray-200 pointer-events-none" />
-            </div>
-            <div
-              class="flex-shrink-0 w-10 h-10 rounded-full bg-anaranjado inline-flex items-center justify-center text-white relative z-10"
-            >
-              1
-            </div>
-            <div class="flex-grow pl-4">
-              <h2
-                class="font-medium title-font text-lg text-gray-900 mb-1 tracking-wider"
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 mx-auto flex flex-wrap">
+        <div class="flex flex-wrap w-full">
+          <div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6 mx-auto">
+            <div class="flex relative pb-12">
+              <div
+                class="h-full w-10 absolute inset-0 flex items-center justify-center"
               >
-                <a href="https://www.encora.com/">Encora</a>
-              </h2>
-              <p class="leading-relaxed">(August 2021 - present)</p>
+                <div class="h-full w-1 bg-gray-200 pointer-events-none" />
+              </div>
+              <div
+                class="flex-shrink-0 w-10 h-10 rounded-full bg-anaranjado inline-flex items-center justify-center text-white relative z-10"
+              >
+                1
+              </div>
+              <div class="flex-grow pl-4">
+                <h2
+                  class="font-medium title-font text-lg text-gray-900 mb-1 tracking-wider"
+                >
+                  <a href="https://www.encora.com/">Encora</a>
+                </h2>
+                <p class="leading-relaxed">(August 2021 - present)</p>
+              </div>
+            </div>
+            <div class="flex relative pb-12">
+              <div
+                class="h-full w-10 absolute inset-0 flex items-center justify-center"
+              >
+                <div class="h-full w-1 bg-gray-200 pointer-events-none" />
+              </div>
+              <div
+                class="flex-shrink-0 w-10 h-10 rounded-full bg-anaranjado inline-flex items-center justify-center text-white relative z-10"
+              >
+                2
+              </div>
+              <div class="flex-grow pl-4">
+                <h2
+                  class="font-medium title-font text-lg text-gray-900 mb-1 tracking-wider"
+                >
+                  <a href="https://www.softensity.com/">Softensity</a>
+                </h2>
+                <p class="leading-relaxed">(June 2021– August 2021)</p>
+              </div>
+            </div>
+            <div class="flex relative pb-12">
+              <div
+                class="h-full w-10 absolute inset-0 flex items-center justify-center"
+              >
+                <div class="h-full w-1 bg-gray-200 pointer-events-none" />
+              </div>
+              <div
+                class="flex-shrink-0 w-10 h-10 rounded-full bg-anaranjado inline-flex items-center justify-center text-white relative z-10"
+              >
+                3
+              </div>
+              <div class="flex-grow pl-4">
+                <h2
+                  class="font-medium title-font text-lg text-gray-900 mb-1 tracking-wider"
+                >
+                  <a href="https://ocho.life/">Ocho</a>
+                </h2>
+                <p class="leading-relaxed">(Oct. 2020 – June 2021)</p>
+              </div>
+            </div>
+            <div class="flex relative pb-12">
+              <div
+                class="h-full w-10 absolute inset-0 flex items-center justify-center"
+              >
+                <div class="h-full w-1 bg-gray-200 pointer-events-none" />
+              </div>
+              <div
+                class="flex-shrink-0 w-10 h-10 rounded-full bg-anaranjado inline-flex items-center justify-center text-white relative z-10"
+              >
+                4
+              </div>
+              <div class="flex-grow pl-4">
+                <h2
+                  class="font-medium title-font text-lg text-gray-900 mb-1 tracking-wider"
+                >
+                  <a href="https://safetyspot.com/">SafetySpot Inc</a>
+                </h2>
+                <p class="leading-relaxed">(Feb. 2017 – June 2020)</p>
+              </div>
+            </div>
+            <div class="flex relative">
+              <div
+                class="flex-shrink-0 w-10 h-10 rounded-full bg-anaranjado inline-flex items-center justify-center text-white relative z-10"
+              >
+                5
+              </div>
+              <div class="flex-grow pl-4">
+                <h2
+                  class="font-medium title-font text-lg text-gray-900 mb-1 tracking-wider"
+                >
+                  Independent Consultant
+                </h2>
+                <p class="leading-relaxed">(Oct. 2016 – Current)</p>
+              </div>
             </div>
           </div>
-          <div class="flex relative pb-12">
-            <div
-              class="h-full w-10 absolute inset-0 flex items-center justify-center"
-            >
-              <div class="h-full w-1 bg-gray-200 pointer-events-none" />
-            </div>
-            <div
-              class="flex-shrink-0 w-10 h-10 rounded-full bg-anaranjado inline-flex items-center justify-center text-white relative z-10"
-            >
-              2
-            </div>
-            <div class="flex-grow pl-4">
-              <h2
-                class="font-medium title-font text-lg text-gray-900 mb-1 tracking-wider"
-              >
-                <a href="https://www.softensity.com/">Softensity</a>
-              </h2>
-              <p class="leading-relaxed">(June 2021– August 2021)</p>
-            </div>
-          </div>
-
-          <div class="flex relative pb-12">
-            <div
-              class="h-full w-10 absolute inset-0 flex items-center justify-center"
-            >
-              <div class="h-full w-1 bg-gray-200 pointer-events-none" />
-            </div>
-            <div
-              class="flex-shrink-0 w-10 h-10 rounded-full bg-anaranjado inline-flex items-center justify-center text-white relative z-10"
-            >
-              3
-            </div>
-            <div class="flex-grow pl-4">
-              <h2
-                class="font-medium title-font text-lg text-gray-900 mb-1 tracking-wider"
-              >
-                <a href="https://ocho.life/">Ocho</a>
-              </h2>
-              <p class="leading-relaxed">(Oct. 2020 – June 2021)</p>
-            </div>
-          </div>
-          <div class="flex relative pb-12">
-            <div
-              class="h-full w-10 absolute inset-0 flex items-center justify-center"
-            >
-              <div class="h-full w-1 bg-gray-200 pointer-events-none" />
-            </div>
-            <div
-              class="flex-shrink-0 w-10 h-10 rounded-full bg-anaranjado inline-flex items-center justify-center text-white relative z-10"
-            >
-              4
-            </div>
-            <div class="flex-grow pl-4">
-              <h2
-                class="font-medium title-font text-lg text-gray-900 mb-1 tracking-wider"
-              >
-                <a href="https://safetyspot.com/">SafetySpot Inc</a>
-              </h2>
-              <p class="leading-relaxed">(Feb. 2017 – June 2020)</p>
-            </div>
-          </div>
-
-          <div class="flex relative">
-            <div
-              class="flex-shrink-0 w-10 h-10 rounded-full bg-anaranjado inline-flex items-center justify-center text-white relative z-10"
-            >
-              5
-            </div>
-            <div class="flex-grow pl-4">
-              <h2
-                class="font-medium title-font text-lg text-gray-900 mb-1 tracking-wider"
-              >
-                Independent Consultant
-              </h2>
-              <p class="leading-relaxed">(Oct. 2016 – Current)</p>
-            </div>
-          </div>
+          <img
+            class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12 scale-75"
+            src="./images/undraw.png"
+            alt="step"
+          />
         </div>
       </div>
-    </div>
+    </section>
   </section>
 
   <Projects />

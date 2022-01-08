@@ -23,7 +23,7 @@
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        class="w-10 h-10 text-white p-2 bg-anaranjado rounded-full"
+        class="w-10 h-10 text-white p-2 bg-anaranjado rounded-full animate-bounce"
         viewBox="0 0 20 20"
         fill="currentColor"
         stroke="currentColor"

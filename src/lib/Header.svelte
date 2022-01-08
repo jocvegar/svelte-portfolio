@@ -4,7 +4,11 @@
 </script>
 
 <div class="text-center mb-20">
-  <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
+  <h1
+    class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4"
+    data-aos="fade-up"
+    data-aos-delay="100"
+  >
     {title}
   </h1>
   <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500">

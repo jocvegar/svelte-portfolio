@@ -20,7 +20,7 @@
     <a
       name="home"
       on:click={goHome}
-      class="flex title-font font-medium items-center text-gray-900 "
+      class="flex title-font font-medium items-center text-gray-900 hover:scale-110 ease-in duration-300"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -92,7 +92,7 @@
     </nav>
 
     <button
-      class="transition duration-500 ease-in-out hidden text-bold sm:inline-flex items-center bg-gray-100 border-0 py-2 px-4 focus:outline-none hover:bg-anaranjado hover:text-white rounded text-base mt-4 md:mt-0 transform hover:-translate-y-1 hover:scale-110"
+      class="transition duration-500 ease-in-out hidden text-bold sm:inline-flex items-center bg-gray-100 border-0 py-2 px-4 focus:outline-none hover:bg-anaranjado hover:text-white rounded text-base mt-4 md:mt-0 transform hover:-translate-y-1 hover:scale-110 shadow-md"
       on:click={() =>
         animateScroll.scrollTo({
           element: "#contact",
