@@ -7,7 +7,7 @@
   <h1
     class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4"
     data-aos="fade-up"
-    data-aos-delay="100"
+    data-aos-delay="200"
   >
     {title}
   </h1>
