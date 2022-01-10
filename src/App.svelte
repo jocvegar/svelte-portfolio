@@ -211,144 +211,32 @@
           title="Design & Development"
           description="Clean, modern designs - optimized for performance"
         />
-
         <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
-          <div class="p-2 sm:w-1/2 w-full transform hover:scale-105">
-            <div
-              class="bg-gray-100 rounded flex p-4 h-full items-center"
-              data-aos="fade-down"
-              data-aos-delay="100"
-            >
-              <svg
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="3"
-                class="text-anaranjado w-6 h-6 flex-shrink-0 mr-4"
-                viewBox="0 0 24 24"
+          {#each userData.skills as skill}
+            <div class="p-2 sm:w-1/2 w-full transform hover:scale-105">
+              <div
+                class="bg-gray-100 rounded flex p-4 h-full items-center"
+                data-aos="fade-down"
+                data-aos-delay={skill.delay}
               >
-                <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
-                <path d="M22 4L12 14.01l-3-3" />
-              </svg>
-              <span class="title-font font-medium text-left">
-                Unique websites
-              </span>
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="3"
+                  class="text-anaranjado w-6 h-6 flex-shrink-0 mr-4"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                  <path d="M22 4L12 14.01l-3-3" />
+                </svg>
+                <span class="title-font font-medium text-left">
+                  {skill.name}
+                </span>
+              </div>
             </div>
-          </div>
-          <div class="p-2 sm:w-1/2 w-full transform hover:scale-105">
-            <div
-              class="bg-gray-100 rounded flex p-4 h-full items-center"
-              data-aos="fade-down"
-              data-aos-delay="150"
-            >
-              <svg
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="3"
-                class="text-anaranjado w-6 h-6 flex-shrink-0 mr-4"
-                viewBox="0 0 24 24"
-              >
-                <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
-                <path d="M22 4L12 14.01l-3-3" />
-              </svg>
-              <span class="title-font font-medium text-left">
-                Intuitive UX | UI
-              </span>
-            </div>
-          </div>
-          <div class="p-2 sm:w-1/2 w-full transform hover:scale-105">
-            <div
-              class="bg-gray-100 rounded flex p-4 h-full items-center"
-              data-aos="fade-down"
-              data-aos-delay="200"
-            >
-              <svg
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="3"
-                class="text-anaranjado w-6 h-6 flex-shrink-0 mr-4"
-                viewBox="0 0 24 24"
-              >
-                <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
-                <path d="M22 4L12 14.01l-3-3" />
-              </svg>
-              <span class="title-font font-medium text-left">
-                Constant communication with client
-              </span>
-            </div>
-          </div>
-          <div class="p-2 sm:w-1/2 w-full transform hover:scale-105">
-            <div
-              class="bg-gray-100 rounded flex p-4 h-full items-center"
-              data-aos="fade-down"
-              data-aos-delay="250"
-            >
-              <svg
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="3"
-                class="text-anaranjado w-6 h-6 flex-shrink-0 mr-4"
-                viewBox="0 0 24 24"
-              >
-                <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
-                <path d="M22 4L12 14.01l-3-3" />
-              </svg>
-              <span class="title-font font-medium text-left">
-                Responsive design
-              </span>
-            </div>
-          </div>
-          <div class="p-2 sm:w-1/2 w-full transform hover:scale-105">
-            <div
-              class="bg-gray-100 rounded flex p-4 h-full items-center"
-              data-aos="fade-down"
-              data-aos-delay="300"
-            >
-              <svg
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="3"
-                class="text-anaranjado w-6 h-6 flex-shrink-0 mr-4"
-                viewBox="0 0 24 24"
-              >
-                <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
-                <path d="M22 4L12 14.01l-3-3" />
-              </svg>
-              <span class="title-font font-medium text-left">
-                Continuous monitoring
-              </span>
-            </div>
-          </div>
-          <div class="p-2 sm:w-1/2 w-full transform hover:scale-105">
-            <div
-              class="bg-gray-100 rounded flex p-4 h-full items-center"
-              data-aos="fade-down"
-              data-aos-delay="350"
-            >
-              <svg
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="3"
-                class="text-anaranjado w-6 h-6 flex-shrink-0 mr-4"
-                viewBox="0 0 24 24"
-              >
-                <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
-                <path d="M22 4L12 14.01l-3-3" />
-              </svg>
-              <span class="title-font font-medium text-left">Unit tests</span>
-            </div>
-          </div>
+          {/each}
         </div>
       </div>
     </section>
@@ -363,101 +251,28 @@
       <div class="container px-5 mx-auto flex flex-wrap">
         <div class="flex flex-wrap w-full">
           <div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6 mx-auto">
-            <div class="flex relative pb-12">
-              <div
-                class="h-full w-12 absolute inset-0 flex items-center justify-center"
-              >
-                <div class="h-full w-1 bg-gray-200 pointer-events-none" />
-              </div>
-              <div
-                class="flex-shrink-0 w-12 h-12 shadow rounded-full bg-anaranjado inline-flex items-center justify-center text-white relative z-10"
-              >
-                1
-              </div>
-              <div class="flex-grow pl-4">
-                <h2
-                  class="font-medium title-font text-lg text-gray-900 mb-1 tracking-wider"
+            {#each userData.work as work}
+              <div class="flex relative pb-12">
+                <div
+                  class="h-full w-12 absolute inset-0 flex items-center justify-center"
                 >
-                  <a href="https://www.encora.com/">Encora</a>
-                </h2>
-                <p class="leading-relaxed">(August 2021 - present)</p>
-              </div>
-            </div>
-            <div class="flex relative pb-12">
-              <div
-                class="h-full w-12 absolute inset-0 flex items-center justify-center"
-              >
-                <div class="h-full w-1 bg-gray-200 pointer-events-none" />
-              </div>
-              <div
-                class="flex-shrink-0 w-12 h-12 shadow rounded-full bg-anaranjado inline-flex items-center justify-center text-white relative z-10"
-              >
-                2
-              </div>
-              <div class="flex-grow pl-4">
-                <h2
-                  class="font-medium title-font text-lg text-gray-900 mb-1 tracking-wider"
+                  <div class="h-full w-1 bg-gray-200 pointer-events-none" />
+                </div>
+                <div
+                  class="flex-shrink-0 w-12 h-12 shadow rounded-full bg-anaranjado inline-flex items-center justify-center text-white relative z-10"
                 >
-                  <a href="https://www.softensity.com/">Softensity</a>
-                </h2>
-                <p class="leading-relaxed">(June 2021– August 2021)</p>
+                  {work.order}
+                </div>
+                <div class="flex-grow pl-4">
+                  <h2
+                    class="font-medium title-font text-lg text-gray-900 mb-1 tracking-wider"
+                  >
+                    <a href={work.link}>{work.name}</a>
+                  </h2>
+                  <p class="leading-relaxed">({work.date})</p>
+                </div>
               </div>
-            </div>
-            <div class="flex relative pb-12">
-              <div
-                class="h-full w-12 absolute inset-0 flex items-center justify-center"
-              >
-                <div class="h-full w-1 bg-gray-200 pointer-events-none" />
-              </div>
-              <div
-                class="flex-shrink-0 w-12 h-12 shadow rounded-full bg-anaranjado inline-flex items-center justify-center text-white relative z-10"
-              >
-                3
-              </div>
-              <div class="flex-grow pl-4">
-                <h2
-                  class="font-medium title-font text-lg text-gray-900 mb-1 tracking-wider"
-                >
-                  <a href="https://ocho.life/">Ocho</a>
-                </h2>
-                <p class="leading-relaxed">(Oct. 2020 – June 2021)</p>
-              </div>
-            </div>
-            <div class="flex relative pb-12">
-              <div
-                class="h-full w-12 absolute inset-0 flex items-center justify-center"
-              >
-                <div class="h-full w-1 bg-gray-200 pointer-events-none" />
-              </div>
-              <div
-                class="flex-shrink-0 w-12 h-12 shadow rounded-full bg-anaranjado inline-flex items-center justify-center text-white relative z-10"
-              >
-                4
-              </div>
-              <div class="flex-grow pl-4">
-                <h2
-                  class="font-medium title-font text-lg text-gray-900 mb-1 tracking-wider"
-                >
-                  <a href="https://safetyspot.com/">SafetySpot Inc</a>
-                </h2>
-                <p class="leading-relaxed">(Feb. 2017 – June 2020)</p>
-              </div>
-            </div>
-            <div class="flex relative">
-              <div
-                class="flex-shrink-0 w-12 h-12 shadow rounded-full bg-anaranjado inline-flex items-center justify-center text-white relative z-10"
-              >
-                5
-              </div>
-              <div class="flex-grow pl-4">
-                <h2
-                  class="font-medium title-font text-lg text-gray-900 mb-1 tracking-wider"
-                >
-                  Independent Consultant
-                </h2>
-                <p class="leading-relaxed">(Oct. 2016 – Current)</p>
-              </div>
-            </div>
+            {/each}
           </div>
           <img
             class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12 scale-75"
