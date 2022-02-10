@@ -45,7 +45,7 @@
       class="md:ml-auto md:mr-auto flex-wrap items-center text-base justify-center hidden text-bold sm:flex"
     >
       <a
-        class="mr-5 transition duration-500 ease-in-out hover:text-anaranjado transform hover:-translate-y-1 hover:scale-110"
+        class="text-lg font-medium mr-5 transition duration-500 ease-in-out hover:text-anaranjado transform hover:-translate-y-1 hover:scale-110"
         name="navigation"
         on:click={() =>
           animateScroll.scrollTo({
@@ -58,7 +58,7 @@
 
       <a
         name="navigation"
-        class="mr-5 transition duration-500 ease-in-out hover:text-anaranjado transform hover:-translate-y-1 hover:scale-110"
+        class="text-lg font-medium mr-5 transition duration-500 ease-in-out hover:text-anaranjado transform hover:-translate-y-1 hover:scale-110"
         on:click={() =>
           animateScroll.scrollTo({
             element: "#employement",
@@ -69,7 +69,7 @@
       </a>
       <a
         name="navigation"
-        class="mr-5 transition duration-500 ease-in-out hover:text-anaranjado transform hover:-translate-y-1 hover:scale-110"
+        class="text-lg font-medium mr-5 transition duration-500 ease-in-out hover:text-anaranjado transform hover:-translate-y-1 hover:scale-110"
         on:click={() =>
           animateScroll.scrollTo({
             element: "#projects",
@@ -80,7 +80,7 @@
       </a>
       <a
         name="navigation"
-        class="mr-5 transition duration-500 ease-in-out hover:text-anaranjado transform hover:-translate-y-1 hover:scale-110"
+        class="text-lg font-medium mr-5 transition duration-500 ease-in-out hover:text-anaranjado transform hover:-translate-y-1 hover:scale-110"
         on:click={() =>
           animateScroll.scrollTo({
             element: "#tech",

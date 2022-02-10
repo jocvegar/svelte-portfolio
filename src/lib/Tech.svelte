@@ -3,7 +3,7 @@
   import Header from "./Header.svelte";
 </script>
 
-<section id="tech" class="dark:bg-gray-800 my-16 py-16 bg-gray-100">
+<section id="tech" class="my-16 py-16 bg-gray-100">
   <Header title="Tech Stack" />
   <div class="grid grid-cols-2 md:grid-cols-6 px-4 md:px-20 gap-y-12">
     <svg
