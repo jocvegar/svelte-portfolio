@@ -12,35 +12,35 @@
 </script>
 
 <aside
-  class="absolute w-full h-full bg-gray-100 border-r-2 shadow-lg"
+  class="absolute h-full w-full border-r-2 bg-gray-100 shadow-lg"
   class:open
 >
   <nav class="p-12 text-xl">
-    <a class="block my-4" name="navigation" on:click={() => goTo("#about")}>
+    <a class="my-4 block" name="navigation" on:click={() => goTo("#about")}>
       About
     </a>
     <a
-      class="block my-4"
+      class="my-4 block"
       name="navigation"
       on:click={() => goTo("#employement")}
     >
       Employement
     </a>
-    <a class="block my-4" name="navigation" on:click={() => goTo("#projects")}>
+    <a class="my-4 block" name="navigation" on:click={() => goTo("#projects")}>
       Projects
     </a>
-    <a class="block my-4" name="navigation" on:click={() => goTo("#tech")}>
+    <a class="my-4 block" name="navigation" on:click={() => goTo("#tech")}>
       Tech Stack
     </a>
     <a
-      class="my-4 items-center bg-anaranjado text-white rounded text-base py-2 px-4 inline-flex"
+      class="my-4 inline-flex items-center rounded bg-anaranjado py-2 px-4 text-base text-white"
       name="navigation"
       on:click={() => goTo("#contact")}
     >
       Contact
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        class="w-4 h-4 ml-1"
+        class="ml-1 h-4 w-4"
         viewBox="0 0 20 20"
         fill="currentColor"
       >

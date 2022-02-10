@@ -36,15 +36,15 @@
   <Alert bind:alert />
 
   <main>
-    <section class="text-gray-600 body-font">
+    <section class="body-font text-gray-600">
       <div
-        class="container mx-auto flex px-5 py-8 md:py-16 md:flex-row flex-col items-center"
+        class="container mx-auto flex flex-col items-center px-5 py-8 md:flex-row md:py-16"
       >
         <div
-          class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-4 items-center text-center order-last md:order-first"
+          class="order-last mb-16 flex flex-col items-center text-center md:order-first md:mb-4 md:w-1/2 md:items-start md:pr-16 md:text-left lg:flex-grow lg:pr-24"
         >
           <h1
-            class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-200"
+            class="title-font mb-4 text-3xl font-medium text-gray-200 sm:text-4xl"
           >
             <Annotation
               bind:visible={visible[0]}
@@ -57,7 +57,7 @@
               {userData.designation}
             </Annotation>
           </h1>
-          <p class="mb-8 leading-relaxed text-2xl">
+          <p class="mb-8 text-2xl leading-relaxed">
             I'm a software developer that
             <Annotation
               bind:visible={visible[1]}
@@ -75,18 +75,18 @@
                   element: "#about",
                   offset: 50,
                 })}
-              class="inline-flex text-white bg-anaranjado border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg shadow-md"
+              class="inline-flex rounded border-0 bg-anaranjado py-2 px-6 text-lg text-white shadow-md hover:bg-red-600 focus:outline-none"
             >
               More
             </button>
             <button
-              class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg shadow-md"
+              class="ml-4 inline-flex rounded border-0 bg-gray-100 py-2 px-6 text-lg text-gray-700 shadow-md hover:bg-gray-200 focus:outline-none"
             >
               <a href="/JoseVegaCV.pdf" download> Download Resume </a>
             </button>
           </div>
         </div>
-        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-16">
+        <div class="mb-16 w-5/6 md:w-1/2 lg:w-full lg:max-w-lg">
           <lottie-player
             class="object-cover object-center"
             src="https://assets4.lottiefiles.com/packages/lf20_hntzYU.json"
@@ -103,14 +103,14 @@
       </div>
     </section>
 
-    <section id="about" class="text-gray-600 body-font bg-gray-100">
-      <div class="container px-5 py-16 mx-auto">
+    <section id="about" class="body-font bg-gray-100 text-gray-600">
+      <div class="container mx-auto px-5 py-16">
         <Header title="About" />
-        <div class="flex flex-wrap -m-4">
-          <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+        <div class="-m-4 flex flex-wrap">
+          <div class="mb-6 p-4 lg:mb-0 lg:w-1/3">
             <div class="h-full text-center">
               <div
-                class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-light-anaranjado text-anaranjado mb-4 shadow"
+                class="mb-4 inline-flex h-20 w-20 items-center justify-center rounded-full bg-light-anaranjado text-anaranjado shadow"
                 data-aos="fade-down"
                 data-aos-delay="250"
               >
@@ -135,14 +135,14 @@
                 Netlify, Nuxt, Next, among others.
               </p>
               <span
-                class="inline-block h-1 w-10 rounded bg-anaranjado mt-6 mb-4"
+                class="mt-6 mb-4 inline-block h-1 w-10 rounded bg-anaranjado"
               />
             </div>
           </div>
-          <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+          <div class="mb-6 p-4 lg:mb-0 lg:w-1/3">
             <div class="h-full text-center">
               <div
-                class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-light-anaranjado text-anaranjado mb-4 shadow"
+                class="mb-4 inline-flex h-20 w-20 items-center justify-center rounded-full bg-light-anaranjado text-anaranjado shadow"
                 data-aos="fade-down"
                 data-aos-delay="250"
               >
@@ -166,14 +166,14 @@
                 on Rails, HTML, CSS, APIs, Vue and React.
               </p>
               <span
-                class="inline-block h-1 w-10 rounded bg-anaranjado mt-6 mb-4"
+                class="mt-6 mb-4 inline-block h-1 w-10 rounded bg-anaranjado"
               />
             </div>
           </div>
-          <div class="lg:w-1/3 lg:mb-0 p-4">
+          <div class="p-4 lg:mb-0 lg:w-1/3">
             <div class="h-full text-center">
               <div
-                class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-light-anaranjado text-anaranjado mb-4 shadow"
+                class="mb-4 inline-flex h-20 w-20 items-center justify-center rounded-full bg-light-anaranjado text-anaranjado shadow"
                 data-aos="fade-down"
                 data-aos-delay="250"
               >
@@ -196,7 +196,7 @@
                 prefer a specific one or a different stack, we can make it work!
               </p>
               <span
-                class="inline-block h-1 w-10 rounded bg-anaranjado mt-6 mb-4"
+                class="mt-6 mb-4 inline-block h-1 w-10 rounded bg-anaranjado"
               />
             </div>
           </div>
@@ -204,17 +204,17 @@
       </div>
     </section>
 
-    <section class="text-gray-600 body-font ">
-      <div class="container px-5 py-24 mx-auto">
+    <section class="body-font text-gray-600 ">
+      <div class="container mx-auto px-5 py-24">
         <Header
           title="Design & Development"
           description="Clean, modern designs - optimized for performance"
         />
-        <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+        <div class="-mx-2 flex flex-wrap sm:mx-auto sm:mb-2 lg:w-4/5">
           {#each userData.skills as skill}
-            <div class="p-2 sm:w-1/2 w-full transform hover:scale-105">
+            <div class="w-full transform p-2 hover:scale-105 sm:w-1/2">
               <div
-                class="bg-gray-100 rounded flex p-4 h-full items-center"
+                class="flex h-full items-center rounded bg-gray-100 p-4"
                 data-aos="fade-down"
                 data-aos-delay={skill.delay}
               >
@@ -224,13 +224,13 @@
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="3"
-                  class="text-anaranjado w-6 h-6 flex-shrink-0 mr-4"
+                  class="mr-4 h-6 w-6 flex-shrink-0 text-anaranjado"
                   viewBox="0 0 24 24"
                 >
                   <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
                   <path d="M22 4L12 14.01l-3-3" />
                 </svg>
-                <span class="title-font font-medium text-left">
+                <span class="title-font text-left font-medium">
                   {skill.name}
                 </span>
               </div>
@@ -243,28 +243,28 @@
 
   <section
     id="employement"
-    class="text-gray-600 body-font py-16 my-16 bg-gray-100 "
+    class="body-font my-16 bg-gray-100 py-16 text-gray-600 "
   >
     <Header title="Employement History" />
-    <section class="text-gray-600 body-font">
-      <div class="container px-5 mx-auto flex flex-wrap">
-        <div class="flex flex-wrap w-full">
-          <div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6 mx-auto">
+    <section class="body-font text-gray-600">
+      <div class="container mx-auto flex flex-wrap px-5">
+        <div class="flex w-full flex-wrap">
+          <div class="mx-auto md:w-1/2 md:py-6 md:pr-10 lg:w-2/5">
             {#each userData.work as work}
-              <div class="flex relative pb-12">
+              <div class="relative flex pb-12">
                 <div
-                  class="h-full w-12 absolute inset-0 flex items-center justify-center"
+                  class="absolute inset-0 flex h-full w-12 items-center justify-center"
                 >
-                  <div class="h-full w-1 bg-gray-200 pointer-events-none" />
+                  <div class="pointer-events-none h-full w-1 bg-gray-200" />
                 </div>
                 <div
-                  class="flex-shrink-0 w-12 h-12 shadow rounded-full bg-anaranjado inline-flex items-center justify-center text-white relative z-10"
+                  class="relative z-10 inline-flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-anaranjado text-white shadow"
                 >
                   {work.order}
                 </div>
                 <div class="flex-grow pl-4">
                   <h2
-                    class="font-medium title-font text-lg text-gray-900 mb-1 tracking-wider"
+                    class="title-font mb-1 text-lg font-medium tracking-wider text-gray-900"
                   >
                     <a href={work.link}>{work.name}</a>
                   </h2>
@@ -274,7 +274,7 @@
             {/each}
           </div>
           <img
-            class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12 scale-75"
+            class="mt-12 scale-75 rounded-lg object-cover object-center md:mt-0 md:w-1/2 lg:w-3/5"
             src="./images/undraw.png"
             alt="step"
           />

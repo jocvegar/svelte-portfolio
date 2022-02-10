@@ -12,18 +12,18 @@
   };
 </script>
 
-<footer class="text-gray-600 body-font bg-gray-100">
+<footer class="body-font bg-gray-100 text-gray-600">
   <div
-    class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
+    class="container mx-auto flex flex-col items-center px-5 py-8 sm:flex-row"
   >
     <a
       name="logo"
       on:click={goHome}
-      class="cursor-pointer	 flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
+      class="title-font	 flex cursor-pointer items-center justify-center font-medium text-gray-900 md:justify-start"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        class="w-10 h-10 text-white p-2 bg-anaranjado rounded-full animate-bounce"
+        class="h-10 w-10 animate-bounce rounded-full bg-anaranjado p-2 text-white"
         viewBox="0 0 20 20"
         fill="currentColor"
         stroke="currentColor"
@@ -39,7 +39,7 @@
       <span class="ml-3 text-xl">{userData.name}</span>
     </a>
     <p
-      class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"
+      class="mt-4 text-sm text-gray-500 sm:ml-4 sm:mt-0 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:pl-4"
     >
       © {year}
     </p>

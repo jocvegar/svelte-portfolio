@@ -3,13 +3,13 @@
   import Header from "./Header.svelte";
 </script>
 
-<section id="tech" class="my-16 py-16 bg-gray-100">
+<section id="tech" class="my-16 bg-gray-100 py-16">
   <Header title="Tech Stack" />
-  <div class="grid grid-cols-2 md:grid-cols-6 px-4 md:px-20 gap-y-12">
+  <div class="grid grid-cols-2 gap-y-12 px-4 md:grid-cols-6 md:px-20">
     <svg
       use:tippy={{ content: "Ruby on Rails" }}
       viewBox="0 0 128 128"
-      class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
+      class="duration-2000 mx-4 my-4 h-20 w-20 transform justify-self-center transition ease-out hover:scale-150"
     >
       <path
         fill="#C00"
@@ -26,7 +26,7 @@
     <svg
       use:tippy={{ content: "Ruby" }}
       viewBox="0 0 128 128"
-      class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
+      class="duration-2000 mx-4 my-4 h-20 w-20 transform justify-self-center transition ease-out hover:scale-150"
     >
       <linearGradient
         id="ruby-original-a"
@@ -345,36 +345,36 @@
       use:tippy={{ content: "JavaScript" }}
       alt="logo"
       src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"
-      class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
+      class="duration-2000 mx-4 my-4 h-20 w-20 transform justify-self-center transition ease-out hover:scale-150"
     />
     <img
       use:tippy={{ content: "TypeScript" }}
       alt="logo"
       src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"
-      class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
+      class="duration-2000 mx-4 my-4 h-20 w-20 transform justify-self-center transition ease-out hover:scale-150"
     />
     <img
       use:tippy={{ content: "HMTL" }}
       alt="logo"
       src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"
-      class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
+      class="duration-2000 mx-4 my-4 h-20 w-20 transform justify-self-center transition ease-out hover:scale-150"
     />
     <img
       use:tippy={{ content: "CSS" }}
       alt="logo"
       src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"
-      class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
+      class="duration-2000 mx-4 my-4 h-20 w-20 transform justify-self-center transition ease-out hover:scale-150"
     />
     <img
       use:tippy={{ content: "Vue" }}
       alt="logo"
       src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/vue/vue.png"
-      class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
+      class="duration-2000 mx-4 my-4 h-20 w-20 transform justify-self-center transition ease-out hover:scale-150"
     />
     <svg
       use:tippy={{ content: "Git" }}
       viewBox="0 0 128 128"
-      class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
+      class="duration-2000 mx-4 my-4 h-20 w-20 transform justify-self-center transition ease-out hover:scale-150"
     >
       <path
         fill="#F34F29"
@@ -385,19 +385,19 @@
       use:tippy={{ content: "React" }}
       alt="logo"
       src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"
-      class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
+      class="duration-2000 mx-4 my-4 h-20 w-20 transform justify-self-center transition ease-out hover:scale-150"
     />
     <img
       use:tippy={{ content: "Firebae" }}
       alt="logo"
       src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png"
-      class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
+      class="duration-2000 mx-4 my-4 h-20 w-20 transform justify-self-center transition ease-out hover:scale-150"
     />
 
     <svg
       use:tippy={{ content: "AWS" }}
       viewBox="0 0 128 128"
-      class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
+      class="duration-2000 mx-4 my-4 h-20 w-20 transform justify-self-center transition ease-out hover:scale-150"
     >
       <path
         fill="#F7A80D"
@@ -408,7 +408,7 @@
     <svg
       use:tippy={{ content: "Bootstrap" }}
       viewBox="0 0 128 128"
-      class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
+      class="duration-2000 mx-4 my-4 h-20 w-20 transform justify-self-center transition ease-out hover:scale-150"
     >
       <g fill-rule="evenodd"
         ><path
@@ -433,7 +433,7 @@
     <svg
       use:tippy={{ content: "GCP" }}
       viewBox="0 0 128 128"
-      class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
+      class="duration-2000 mx-4 my-4 h-20 w-20 transform justify-self-center transition ease-out hover:scale-150"
     >
       <path
         fill="#ea4535"
@@ -453,7 +453,7 @@
     <svg
       use:tippy={{ content: "GraphQl" }}
       viewBox="0 0 128 128"
-      class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
+      class="duration-2000 mx-4 my-4 h-20 w-20 transform justify-self-center transition ease-out hover:scale-150"
     >
       <g fill="#E434AA"
         ><path d="M18.39 96.852l-4.6-2.657L65.04 5.434l4.597 2.656zm0 0" /><path
@@ -475,7 +475,7 @@
     <svg
       use:tippy={{ content: "Heroku" }}
       viewBox="0 0 128 128"
-      class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
+      class="duration-2000 mx-4 my-4 h-20 w-20 transform justify-self-center transition ease-out hover:scale-150"
     >
       <path
         d="M114 13.9C114 7.3 108.7 2 102.1 2H25.9C19.3 2 14 7.3 14 13.9v100.3c0 6.6 5.3 11.9 11.9 11.9h76.3c6.6 0 11.9-5.3 11.9-11.9V13.9zm-4 .1v99.3c0 4.7-3.5 8.7-8.2 8.7H26.5c-4.7 0-8.5-4-8.5-8.7V14c0-4.7 3.9-8 8.5-8h75.2c4.7 0 8.4 3.6 8.4 8.3l-.1-.3zm-73 94.7l14.1-14.1L37 80.5zm14-60.9V18.4l-13.9.1s.1 45.9.2 45.7C80.1 47.5 77 59.4 77 59.4v49.4l-.1.2H90V59.5c0-27.1-39-11.7-39-11.7zM70 36h14.8c8-10 10.7-17 10.7-17H80.2S75.3 30 70 36z"
@@ -486,7 +486,7 @@
     <svg
       use:tippy={{ content: "Jest" }}
       viewBox="0 0 128 128"
-      class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
+      class="duration-2000 mx-4 my-4 h-20 w-20 transform justify-self-center transition ease-out hover:scale-150"
     >
       <path
         fill="#99425B"
@@ -497,7 +497,7 @@
     <svg
       use:tippy={{ content: "Material UI" }}
       viewBox="0 0 128 128"
-      class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
+      class="duration-2000 mx-4 my-4 h-20 w-20 transform justify-self-center transition ease-out hover:scale-150"
     >
       <path
         fill="#1FA6CA"
@@ -514,7 +514,7 @@
     <svg
       use:tippy={{ content: "Next.js" }}
       viewBox="0 0 128 128"
-      class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
+      class="duration-2000 mx-4 my-4 h-20 w-20 transform justify-self-center transition ease-out hover:scale-150"
     >
       <path
         d="M64 0C28.7 0 0 28.7 0 64s28.7 64 64 64c11.2 0 21.7-2.9 30.8-7.9L48.4 55.3v36.6h-6.8V41.8h6.8l50.5 75.8C116.4 106.2 128 86.5 128 64c0-35.3-28.7-64-64-64zm22.1 84.6l-7.5-11.3V41.8h7.5v42.8z"
@@ -524,7 +524,7 @@
     <svg
       use:tippy={{ content: "Node" }}
       viewBox="0 0 128 128"
-      class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
+      class="duration-2000 mx-4 my-4 h-20 w-20 transform justify-self-center transition ease-out hover:scale-150"
     >
       <path
         fill="#83CD29"
@@ -535,7 +535,7 @@
     <svg
       use:tippy={{ content: "Nuxt" }}
       viewBox="0 0 128 128"
-      class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
+      class="duration-2000 mx-4 my-4 h-20 w-20 transform justify-self-center transition ease-out hover:scale-150"
     >
       <path
         d="M39.267 108.97l-.284-.567c-.567-1.135-.567-2.27-.283-3.689H8.059L53.454 24.14l19.009 34.33 6.241-4.54L59.695 19.6c-.283-.567-2.553-3.971-6.241-3.971-1.703 0-4.256.567-6.242 4.255L1.25 101.31c-.284.852-2.27 4.54-.568 7.66 1.135 1.703 2.838 3.405 6.81 3.405h38.585c-3.972 0-5.958-1.702-6.81-3.404z"
@@ -552,7 +552,7 @@
     <svg
       use:tippy={{ content: "PostgresQl" }}
       viewBox="0 0 128 128"
-      class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
+      class="duration-2000 mx-4 my-4 h-20 w-20 transform justify-self-center transition ease-out hover:scale-150"
     >
       <path
         d="M93.809 92.112c.785-6.533.55-7.492 5.416-6.433l1.235.108c3.742.17 8.637-.602 11.513-1.938 6.191-2.873 9.861-7.668 3.758-6.409-13.924 2.873-14.881-1.842-14.881-1.842 14.703-21.815 20.849-49.508 15.543-56.287-14.47-18.489-39.517-9.746-39.936-9.52l-.134.025c-2.751-.571-5.83-.912-9.289-.968-6.301-.104-11.082 1.652-14.709 4.402 0 0-44.683-18.409-42.604 23.151.442 8.841 12.672 66.898 27.26 49.362 5.332-6.412 10.484-11.834 10.484-11.834 2.558 1.699 5.622 2.567 8.834 2.255l.249-.212c-.078.796-.044 1.575.099 2.497-3.757 4.199-2.653 4.936-10.166 6.482-7.602 1.566-3.136 4.355-.221 5.084 3.535.884 11.712 2.136 17.238-5.598l-.22.882c1.474 1.18 1.375 8.477 1.583 13.69.209 5.214.558 10.079 1.621 12.948 1.063 2.868 2.317 10.256 12.191 8.14 8.252-1.764 14.561-4.309 15.136-27.985"
@@ -570,7 +570,7 @@
     <svg
       use:tippy={{ content: "Svelte" }}
       viewBox="0 0 128 128"
-      class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
+      class="duration-2000 mx-4 my-4 h-20 w-20 transform justify-self-center transition ease-out hover:scale-150"
     >
       <path
         d="M119.838 16.936C105.553-.076 77.336-5.118 56.942 5.696l-35.829 19c-4.847 2.529-9.006 5.871-12.212 9.814-3.206 3.943-5.387 8.399-6.404 13.083a30.64 30.64 0 00-.688 6.396c.022 5.831 1.74 11.571 5.007 16.73-3.063 3.872-5.154 8.22-6.146 12.782a30.483 30.483 0 00.415 14.412c1.29 4.733 3.702 9.204 7.096 13.152 14.284 17.011 42.564 22.053 62.895 11.24l35.792-19.001c4.844-2.532 8.998-5.878 12.196-9.825 3.197-3.947 5.367-8.407 6.37-13.093.46-2.107.691-4.244.688-6.386-.009-5.82-1.705-11.551-4.945-16.709 3.062-3.869 5.153-8.213 6.147-12.771.444-2.109.67-4.245.676-6.386.002-7.595-2.852-15-8.162-21.178v-.02z"
@@ -584,7 +584,7 @@
     <svg
       use:tippy={{ content: "Tailwind" }}
       viewBox="0 0 128 128"
-      class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
+      class="duration-2000 mx-4 my-4 h-20 w-20 transform justify-self-center transition ease-out hover:scale-150"
     >
       <path
         d="M64.004 25.602c-17.067 0-27.73 8.53-32 25.597 6.398-8.531 13.867-11.73 22.398-9.597 4.871 1.214 8.352 4.746 12.207 8.66C72.883 56.629 80.145 64 96.004 64c17.066 0 27.73-8.531 32-25.602-6.399 8.536-13.867 11.735-22.399 9.602-4.87-1.215-8.347-4.746-12.207-8.66-6.27-6.367-13.53-13.738-29.394-13.738zM32.004 64c-17.066 0-27.73 8.531-32 25.602C6.402 81.066 13.87 77.867 22.402 80c4.871 1.215 8.352 4.746 12.207 8.66 6.274 6.367 13.536 13.738 29.395 13.738 17.066 0 27.73-8.53 32-25.597-6.399 8.531-13.867 11.73-22.399 9.597-4.87-1.214-8.347-4.746-12.207-8.66C55.128 71.371 47.868 64 32.004 64zm0 0"
@@ -595,7 +595,7 @@
     <svg
       use:tippy={{ content: "Trello" }}
       viewBox="0 0 128 128"
-      class="h-20 w-20 mx-4 my-4 justify-self-center transform hover:scale-150 transition duration-2000 ease-out"
+      class="duration-2000 mx-4 my-4 h-20 w-20 transform justify-self-center transition ease-out hover:scale-150"
     >
       <path
         fill="#23719F"

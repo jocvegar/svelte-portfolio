@@ -52,19 +52,19 @@
   };
 </script>
 
-<section id="contact" class="text-gray-600 body-font relative">
-  <div class="container px-5 py-8 md:py-16 mx-auto">
+<section id="contact" class="body-font relative text-gray-600">
+  <div class="container mx-auto px-5 py-8 md:py-16">
     <Header
       title="Contact Me"
       description="If you have a project in mind, have a question or simply want to say hi, please send me a message"
     />
 
     <form on:submit={handleSubmit}>
-      <div class="lg:w-1/2 md:w-2/3 mx-auto">
-        <div class="flex flex-wrap -m-2">
-          <div class="p-2 w-full md:w-1/2">
+      <div class="mx-auto md:w-2/3 lg:w-1/2">
+        <div class="-m-2 flex flex-wrap">
+          <div class="w-full p-2 md:w-1/2">
             <div class="relative">
-              <label for="name" class="leading-7 text-sm text-gray-600">
+              <label for="name" class="text-sm leading-7 text-gray-600">
                 Name
               </label>
               <input
@@ -73,18 +73,18 @@
                 type="text"
                 id="name"
                 name="name"
-                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                class="w-full rounded border border-gray-300 bg-gray-100 bg-opacity-50 py-1 px-3 text-base leading-8 text-gray-700 outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200"
               />
               {#if $errors.name}
-                <small class="text-anaranjado font-extralight">
+                <small class="font-extralight text-anaranjado">
                   {$errors.name}
                 </small>
               {/if}
             </div>
           </div>
-          <div class="p-2 w-full md:w-1/2">
+          <div class="w-full p-2 md:w-1/2">
             <div class="relative">
-              <label for="email" class="leading-7 text-sm text-gray-600">
+              <label for="email" class="text-sm leading-7 text-gray-600">
                 Email
               </label>
               <input
@@ -93,18 +93,18 @@
                 type="email"
                 id="email"
                 name="email"
-                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                class="w-full rounded border border-gray-300 bg-gray-100 bg-opacity-50 py-1 px-3 text-base leading-8 text-gray-700 outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200"
               />
               {#if $errors.email}
-                <small class="text-anaranjado font-extralight">
+                <small class="font-extralight text-anaranjado">
                   {$errors.email}
                 </small>
               {/if}
             </div>
           </div>
-          <div class="p-2 w-full">
+          <div class="w-full p-2">
             <div class="relative">
-              <label for="message" class="leading-7 text-sm text-gray-600">
+              <label for="message" class="text-sm leading-7 text-gray-600">
                 Message
               </label>
               <textarea
@@ -112,28 +112,28 @@
                 on:change={handleChange}
                 id="message"
                 name="message"
-                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                class="h-32 w-full resize-none rounded border border-gray-300 bg-gray-100 bg-opacity-50 py-1 px-3 text-base leading-6 text-gray-700 outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200"
               />
               {#if $errors.message}
-                <small class="text-anaranjado font-extralight">
+                <small class="font-extralight text-anaranjado">
                   {$errors.message}
                 </small>
               {/if}
             </div>
           </div>
-          <div class="p-2 w-full">
+          <div class="w-full p-2">
             <button
-              class="flex mx-auto text-white bg-anaranjado border-0 py-2 px-8 focus:outline-none hover:bg-red-600 rounded text-lg"
+              class="mx-auto flex rounded border-0 bg-anaranjado py-2 px-8 text-lg text-white hover:bg-red-600 focus:outline-none"
             >
               Send
             </button>
           </div>
 
           <div
-            class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center"
+            class="mt-8 w-full border-t border-gray-200 p-2 pt-8 text-center"
           >
             <a href={"#"} class="text-anaranjado">{userData.email}</a>
-            <p class="leading-normal my-5">
+            <p class="my-5 leading-normal">
               {userData.address}
             </p>
             <span class="inline-flex">
@@ -148,7 +148,7 @@
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="2"
-                  class="w-5 h-5"
+                  class="h-5 w-5"
                   viewBox="0 0 496 512"
                   ><path
                     fill="currentColor"
@@ -166,7 +166,7 @@
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="2"
-                  class="w-5 h-5"
+                  class="h-5 w-5"
                   viewBox="0 0 448 512"
                   ><path
                     fill="currentColor"

@@ -14,17 +14,17 @@
   };
 </script>
 
-<header class="text-gray-600 body-font">
-  <div class="container mx-auto flex flex-wrap p-5 flex-row items-center">
+<header class="body-font text-gray-600">
+  <div class="container mx-auto flex flex-row flex-wrap items-center p-5">
     <Hamburger bind:open={sidebar} />
     <a
       name="home"
       on:click={goHome}
-      class="flex title-font font-medium items-center text-gray-900 hover:scale-110 ease-in duration-300"
+      class="title-font flex items-center font-medium text-gray-900 duration-300 ease-in hover:scale-110"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        class="w-10 h-10 text-white p-2 bg-anaranjado rounded-full"
+        class="h-10 w-10 rounded-full bg-anaranjado p-2 text-white"
         viewBox="0 0 20 20"
         fill="currentColor"
         stroke="currentColor"
@@ -42,10 +42,10 @@
     </a>
 
     <nav
-      class="md:ml-auto md:mr-auto flex-wrap items-center text-base justify-center hidden text-bold sm:flex"
+      class="text-bold hidden flex-wrap items-center justify-center text-base sm:flex md:ml-auto md:mr-auto"
     >
       <a
-        class="text-lg font-medium mr-5 transition duration-500 ease-in-out hover:text-anaranjado transform hover:-translate-y-1 hover:scale-110"
+        class="mr-5 transform text-lg font-medium transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-anaranjado"
         name="navigation"
         on:click={() =>
           animateScroll.scrollTo({
@@ -58,7 +58,7 @@
 
       <a
         name="navigation"
-        class="text-lg font-medium mr-5 transition duration-500 ease-in-out hover:text-anaranjado transform hover:-translate-y-1 hover:scale-110"
+        class="mr-5 transform text-lg font-medium transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-anaranjado"
         on:click={() =>
           animateScroll.scrollTo({
             element: "#employement",
@@ -69,7 +69,7 @@
       </a>
       <a
         name="navigation"
-        class="text-lg font-medium mr-5 transition duration-500 ease-in-out hover:text-anaranjado transform hover:-translate-y-1 hover:scale-110"
+        class="mr-5 transform text-lg font-medium transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-anaranjado"
         on:click={() =>
           animateScroll.scrollTo({
             element: "#projects",
@@ -80,7 +80,7 @@
       </a>
       <a
         name="navigation"
-        class="text-lg font-medium mr-5 transition duration-500 ease-in-out hover:text-anaranjado transform hover:-translate-y-1 hover:scale-110"
+        class="mr-5 transform text-lg font-medium transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-anaranjado"
         on:click={() =>
           animateScroll.scrollTo({
             element: "#tech",
@@ -92,7 +92,7 @@
     </nav>
 
     <button
-      class="transition duration-500 ease-in-out hidden text-bold sm:inline-flex items-center bg-gray-100 border-0 py-2 px-4 focus:outline-none hover:bg-anaranjado hover:text-white rounded text-base mt-4 md:mt-0 transform hover:-translate-y-1 hover:scale-110 shadow-md"
+      class="text-bold mt-4 hidden transform items-center rounded border-0 bg-gray-100 py-2 px-4 text-base shadow-md transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-anaranjado hover:text-white focus:outline-none sm:inline-flex md:mt-0"
       on:click={() =>
         animateScroll.scrollTo({
           element: "#contact",
@@ -102,7 +102,7 @@
       Contact
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        class="w-4 h-4 ml-1"
+        class="ml-1 h-4 w-4"
         viewBox="0 0 20 20"
         fill="currentColor"
       >

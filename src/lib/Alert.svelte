@@ -4,7 +4,7 @@
 
 {#if alert}
   <div
-    class="bg-red-100 border border-light-anaranjado text-anaranjado px-4 py-3 rounded relative"
+    class="relative rounded border border-light-anaranjado bg-red-100 px-4 py-3 text-anaranjado"
     role="alert"
     on:click={() => (alert = !alert)}
   >
@@ -12,7 +12,7 @@
     <span class="block sm:inline">Pronto me comunico con tigo.</span>
     <span class="absolute top-0 bottom-0 right-0 px-4 py-3">
       <svg
-        class="fill-current h-6 w-6 text-red-500"
+        class="h-6 w-6 fill-current text-red-500"
         role="button"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 20 20"
