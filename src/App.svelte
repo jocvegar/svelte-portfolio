@@ -14,14 +14,13 @@
   import "aos/dist/aos.css";
   import userData from "./constants/userData";
   import * as animateScroll from "svelte-scrollto";
+  AOS.init();
 
   const visible = [false, false];
   let open = false;
   let alert = false;
 
   onMount(() => {
-    AOS.init();
-
     setTimeout(() => (visible[0] = true), 1200);
     setTimeout(() => (visible[1] = true), 2000);
   });
